@@ -9,8 +9,14 @@
   <body class="grey darken-4">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
-    <div class="container white-text">
-      {{ content }}
-    </div>
+    <!--Header goes here-->
+    {% include header.html %}
+    <main>
+      <div class="container white-text">
+        {{ content }}
+      </div>
+    </main>
+    <!-- Footer goes here -->
+    {% include footer.html %}
   </body>
 </html>
