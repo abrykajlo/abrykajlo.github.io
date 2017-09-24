@@ -1,13 +1,17 @@
-<nav class="navbar navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <img height="60px" src="images/logo.svg"/>
-    </a>
-
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link">ABOUT</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<header class="navbar">
+  <img class="rounded-circle" height="80px" src="images/logo.svg"/>
+  <ul class="nav">
+{% assign page_list = site.pages | sort: 'order' %}
+{% for node in page_list %}
+{% if node.menu %}
+{% assign active = '' %}
+{% if page.menu == node.menu %}
+{% assign active = ' active' %}
+{% endif %}
+    <li class="nav-item{{ active }}">
+      <a class="nav-link" href="{{ node.url }}">{{ node.menu }}</a>
+    </li>
+{% endif %}
+{% endfor %}
+  </ul>
+</header>

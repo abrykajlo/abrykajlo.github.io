@@ -1,15 +1,17 @@
-.swag-line:before {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    z-index: 2;
-    background-color: #fbc02d;
+body {
+    background-color: #1b1b1b;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
-.primary-color {
-    background-color: #212121;
+.nav-item.active {
+    text-decoration: underline;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #6d6d6d;
 }
