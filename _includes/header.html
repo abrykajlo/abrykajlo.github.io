@@ -1,6 +1,7 @@
 <header class="navbar">
-  <img class="rounded-circle" height="80px" src="images/logo.svg"/>
-  <ul class="nav">
+  <div class="container">
+    <img class="rounded-circle" height="80px" src="images/logo.svg"/>
+    <ul class="nav">
 {% assign page_list = site.pages | sort: 'order' %}
 {% for node in page_list %}
 {% if node.menu %}
@@ -8,10 +9,11 @@
 {% if page.menu == node.menu %}
 {% assign active = ' active' %}
 {% endif %}
-    <li class="nav-item{{ active }}">
-      <a class="nav-link" href="{{ node.url }}">{{ node.menu }}</a>
-    </li>
+      <li class="nav-item{{ active }}">
+        <a class="nav-link" href="{{ node.url }}">{{ node.menu }}</a>
+      </li>
 {% endif %}
 {% endfor %}
-  </ul>
+    </ul>
+  </div>
 </header>
