@@ -4,12 +4,4 @@ menu: HOME
 order: 1
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur quam leo. Suspendisse dignissim purus nibh, vel vestibulum sapien mollis vitae. Phasellus laoreet hendrerit tellus, congue pulvinar tellus ultrices ac. Duis elementum aliquet tincidunt. Praesent tempus justo nisi, ac facilisis arcu faucibus eu. Phasellus interdum laoreet massa viverra sagittis. Nulla sit amet nisi ante. Duis pellentesque odio et nunc blandit aliquam.
-
-Phasellus at auctor quam. Nam vehicula velit in euismod tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam laoreet turpis eu mollis aliquam. Suspendisse quis cursus risus. Quisque cursus lacus ex, eget accumsan urna semper ut. In molestie nibh in sapien fermentum fermentum. Fusce aliquam ex nunc, et elementum nulla fringilla ut. Fusce ultrices sapien at arcu gravida vulputate. Proin mauris purus, iaculis sit amet mauris id, tincidunt finibus ante. Nulla tempus leo neque, nec bibendum massa rutrum eu. Cras a eros enim. Maecenas tempor est quis neque tincidunt, sit amet ornare sapien elementum. Curabitur in interdum erat, ac condimentum risus.
-
-Morbi in lorem eu erat tempus egestas. Pellentesque et vulputate leo, ac rutrum velit. Donec nec egestas sem, posuere vulputate nunc. Aenean nibh sem, euismod at dolor quis, dictum porta lorem. Curabitur vulputate eget nisi sed consectetur. Suspendisse eros sapien, scelerisque et orci euismod, porta accumsan odio. Nunc euismod mi enim, non tempus elit efficitur a. Integer nec justo id arcu efficitur egestas auctor id urna. Nam facilisis sit amet ipsum sit amet viverra. Fusce fringilla nisl sem, vitae consequat ex rutrum sed. Morbi ullamcorper eros ac sapien ultricies sollicitudin. Integer tempor enim nec fringilla euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum luctus fermentum elit.
-
-Proin ac erat auctor, gravida leo id, euismod augue. Etiam non facilisis quam. Fusce tincidunt, dolor eu pharetra bibendum, arcu elit mollis ipsum, a semper tellus nunc laoreet tellus. Pellentesque aliquam nisi quis lacus egestas, ut maximus enim viverra. Donec molestie varius nisi, eu volutpat lectus finibus ut. Etiam in ullamcorper ligula, et convallis eros. Mauris sed purus diam.
-
-Aliquam erat volutpat. Integer a sollicitudin tellus. Nullam consequat orci quis accumsan imperdiet. Maecenas pulvinar vehicula magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus ac sollicitudin leo. Curabitur a lacus sit amet eros faucibus ullamcorper et eget sapien. Pellentesque porttitor, felis eget tristique congue, tellus magna dignissim tellus, at molestie massa erat at ligula.
+{% include lorem.md %}
