@@ -4,4 +4,6 @@ menu: HOME
 order: 1
 ---
 
-{% include lorem.md %}
+{% for post in site.posts %}
+
+{% endfor %}
