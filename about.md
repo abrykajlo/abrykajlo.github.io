@@ -1,6 +1,6 @@
 ---
 layout: default
-menu: ABOUT
+menu: about
 order: 2
 ---
 

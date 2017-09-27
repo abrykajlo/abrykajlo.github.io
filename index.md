@@ -1,6 +1,6 @@
 ---
 layout: default
-menu: HOME
+menu: home
 order: 1
 ---
 
