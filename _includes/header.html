@@ -1,6 +1,6 @@
 <header class="navbar">
   <div class="container">
-    <img class="rounded-circle" height="80px" src="images/logo.svg"/>
+    <img class="rounded-circle" height="80px" src="{{ site.url }}/images/logo.svg"/>
     <ul class="nav">
 {% assign page_list = site.pages | sort: 'order' %}
 {% for node in page_list %}
@@ -10,7 +10,7 @@
 {% assign active = ' active' %}
 {% endif %}
       <li class="nav-item{{ active }}">
-        <a class="nav-link" href="{{ node.url }}">{{ node.menu | upcase }}</a>
+        <a class="nav-link" href="{{ site.url }}{{ node.url }}">{{ node.menu | upcase }}</a>
       </li>
 {% endif %}
 {% endfor %}

@@ -8,7 +8,9 @@
       crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
       <link rel="stylesheet"
-      href="css/main.css">
+      href="{{ site.url }}/css/main.css">
+      <meta name="viewport" 
+      content="width=device-width, initial-scale=1">
   </head>
   <body>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
@@ -20,7 +22,7 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
       integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" 
       crossorigin="anonymous"></script>
-      <script src="js/main.js"></script>
+      <script src="{{ site.url }}/js/main.js"></script>
     <!--Header goes here-->
     {% include header.html %}
     <main>
