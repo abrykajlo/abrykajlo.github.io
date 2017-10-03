@@ -6,9 +6,16 @@ order: 1
 
 {% for post in site.posts %}
 <div class="card">
+  <div class="card-header">
+    <div class="card-subtitle">
+      <h3 class="text-center">{{ post.date | date: "%b %d" }}</h3>
+      <h3 class="text-center">{{ post.date | date: "%Y" }}</h3>
+    </div>
+    <div class="card-title">
+      <h3>{{ post.title }}</h3>
+    </div>  
+  </div>
   <div class="card-body">
-    <h4 class="card-title">{{ post.title }}</h4>
-    <h5 class="card-subtitle">{{ post.date | date: '%b %d, %Y' }}</h5>
     <div class="card-text">
       {{ post.content | strip_html | truncate: 400 }}
     </div>

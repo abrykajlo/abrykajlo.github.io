@@ -27,6 +27,21 @@ body {
 	margin-bottom: 10px;
 }
 
+.card-header {
+	padding: 0;
+}
+
+.card-title {
+	display: inline-block;
+}
+
+.card-subtitle {
+	background: #fbc02d;
+	color: #1b1b1b;
+	width: 7em;
+	display: inline-block;
+}
+
 .card-text {
 	margin-bottom: 10px;
 }
@@ -34,6 +49,7 @@ body {
 .card-footer {
 	padding-top: 0;
 }
+
 /* The footer CSS is originally from https://tutorialzine.com/2015/01/freebie-5-responsive-footer-templates */
 
 .footer-distributed{
