@@ -22,6 +22,17 @@ body {
 
 /* Post Cards */
 
+.btn-primary {
+	color: white;
+	background-color: #424242;
+	border-color: #424242;
+}
+
+.btn-primary:hover {
+	background-color: #303030;
+	border-color: #303030;
+}
+
 .card {
 	background-color: #1b1b1b;
 	margin-bottom: 10px;
@@ -29,10 +40,16 @@ body {
 
 .card-header {
 	padding: 0;
+	border-bottom: 1px solid #fbc02d;
 }
 
 .card-title {
 	display: inline-block;
+	margin-bottom: 0;
+}
+
+.card-title > h3 {
+	font-weight: 900;
 }
 
 .card-subtitle {
@@ -40,6 +57,9 @@ body {
 	color: #1b1b1b;
 	width: 7em;
 	display: inline-block;
+	margin-top: 0;
+	border-top-left-radius: 0.25rem;
+	margin-right: 2em;
 }
 
 .card-text {

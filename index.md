@@ -7,11 +7,11 @@ order: 1
 {% for post in site.posts %}
 <div class="card">
   <div class="card-header">
-    <div class="card-subtitle">
+    <div class="card-subtitle h-100">
       <h3 class="text-center">{{ post.date | date: "%b %d" }}</h3>
       <h3 class="text-center">{{ post.date | date: "%Y" }}</h3>
     </div>
-    <div class="card-title">
+    <div class="card-title align-middle">
       <h3>{{ post.title }}</h3>
     </div>  
   </div>
@@ -19,7 +19,7 @@ order: 1
     <div class="card-text">
       {{ post.content | strip_html | truncate: 400 }}
     </div>
-    <a href="{{ site.url }}{{ post.url }}" class="card-link btn btn-warning">Read More</a>
+    <a href="{{ site.url }}{{ post.url }}" class="card-link btn btn-primary">Read More</a>
   </div>
   {% if post.tags.size > 0 %}  
   <div class="card-footer">
