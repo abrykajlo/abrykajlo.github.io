@@ -11,7 +11,7 @@ order: 1
       <h3 class="text-center">{{ post.date | date: "%b %d" }}</h3>
       <h3 class="text-center">{{ post.date | date: "%Y" }}</h3>
     </div>
-    <div class="card-title align-middle">
+    <div class="card-title h-100 align-middle">
       <h3>{{ post.title }}</h3>
     </div>  
   </div>
