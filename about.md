@@ -1,7 +1,7 @@
 ---
 layout: default
 menu: about
-order: 2
+order: 4
 ---
 
 {% include lorem.md %}
