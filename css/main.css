@@ -20,6 +20,10 @@ body {
     color: #6d6d6d;
 }
 
+.navbar-toggler {
+	color: white;
+}
+
 /* Post Cards */
 
 .btn-primary {

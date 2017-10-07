@@ -1,7 +1,14 @@
-<header class="navbar">
+<header class="navbar navbar-inverse navbar-expand-md">
   <div class="container">
-    <img class="rounded-circle" height="80px" src="{{ site.url }}/images/logo.svg"/>
-    <ul class="nav">
+    <a class="navbar-brand" href="{{ site.base }}">
+      <img class="rounded-circle" height="80px" src="{{ site.url }}/images/logo.svg"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+      <i class="fa fa-bars fa-lg"></i>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+      <ul class="navbar-nav mt-2 mt-lg-0">
 {% assign page_list = site.pages | sort: 'order' %}
 {% for node in page_list %}
 {% if node.menu %}
@@ -9,11 +16,12 @@
 {% if page.menu == node.menu %}
 {% assign active = ' active' %}
 {% endif %}
-      <li class="nav-item{{ active }}">
-        <a class="nav-link" href="{{ site.url }}{{ node.url }}">{{ node.menu | upcase }}</a>
-      </li>
+        <li class="nav-item{{ active }}">
+          <a class="nav-link" href="{{ site.url }}{{ node.url }}">{{ node.menu | upcase }}</a>
+        </li>
 {% endif %}
 {% endfor %}
-    </ul>
+      </ul>
+    </div>
   </div>
 </header>
