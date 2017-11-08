@@ -30,4 +30,3 @@ publshed: false
 </div>
 {% endfor %} -->
 
-{% include lorem.md %}
