@@ -1,10 +1,11 @@
 ---
 layout: default
-menu: home
+menu: about
 order: 1
+publshed: false
 ---
 
-{% for post in site.posts %}
+<!-- {% for post in site.posts %}
 <div class="card">
   <div class="card-header">
     <div class="card-subtitle h-100">
@@ -27,4 +28,6 @@ order: 1
   </div>
   {% endif %}
 </div>
-{% endfor %}
+{% endfor %} -->
+
+{% include lorem.md %}
