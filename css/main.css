@@ -152,3 +152,9 @@ body {
 		line-height: 1.8;
 	}
 }
+
+/* about me page */
+.headshot {
+	border: 4px solid #fbc02d;
+	float: right;
+}

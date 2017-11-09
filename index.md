@@ -30,3 +30,4 @@ publshed: false
 </div>
 {% endfor %} -->
 
+<img class="headshot rounded-circle" height="400px" src="{{site.url}}/images/headshot.jpg"/>
