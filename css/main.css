@@ -77,6 +77,12 @@ body {
 	padding-top: 0;
 }
 
+/* about me page */
+.headshot {
+	border: 4px solid #fbc02d;
+	height: 350px;
+}
+
 /* The footer CSS is originally from https://tutorialzine.com/2015/01/freebie-5-responsive-footer-templates */
 
 .footer-distributed{
@@ -151,10 +157,4 @@ body {
 	.footer-distributed .footer-left p.footer-links{
 		line-height: 1.8;
 	}
-}
-
-/* about me page */
-.headshot {
-	border: 4px solid #fbc02d;
-	float: right;
 }
