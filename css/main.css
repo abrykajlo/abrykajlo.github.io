@@ -81,6 +81,7 @@ body {
 .headshot {
 	border: 4px solid #fbc02d;
 	height: 350px;
+	width: 350px;
 	margin-bottom: 2em;
 }
 
