@@ -85,6 +85,27 @@ body {
 	margin-bottom: 2em;
 }
 
+/* gallery */
+
+.make-gallery-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 2%;
+	max-width: 100%;
+}
+
+.thumb {
+	
+}
+
+.thumb img {
+	max-width: 100%;
+}
+
+img.gallery {
+	max-width: 100%;
+}
+
 /* The footer CSS is originally from https://tutorialzine.com/2015/01/freebie-5-responsive-footer-templates */
 
 .footer-distributed{

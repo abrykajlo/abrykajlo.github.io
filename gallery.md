@@ -4,15 +4,14 @@ menu: gallery
 order: 3
 published: true
 ---
-
-<div class="row">
-    <div class="col4">
-        <img src=""/>
+{% assign number = 1 %}
+<div class="make-gallery-grid">
+{% for image in site.gallery %}
+    <div class="item-{{ number }} thumb">
+        <a href="{{ image.url }}">
+            <img src="{{ image.thumbnail }}" alt="{{ image.alt }}"/>
+        </a>
     </div>
-    <div class="col4">
-        <img src=""/>
-    </div>
-    <div class="col4">
-        <img src=""/>
-    </div>
+{% assign number = number | plus: 1 %}
+{% endfor %}
 </div>

@@ -17,6 +17,10 @@ plugins:
 sass:
   style: compressed
 
+collections:
+  gallery:
+    output: true
+
 exclude:
   - Gemfile
   - Gemfile.lock
