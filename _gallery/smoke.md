@@ -1,6 +1,6 @@
 ---
 layout: image
-thumbnail: /images/gallery/smoke.jpg
 image: /images/gallery/smoke.jpg
+thumbnail: /images/gallery/thumbnails/smoke.jpg
 alt: Smoke
 ---
