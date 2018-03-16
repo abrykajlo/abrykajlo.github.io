@@ -1,4 +1,5 @@
 ---
+title: Welcome to my website!
 layout: default
 menu: about
 order: 1

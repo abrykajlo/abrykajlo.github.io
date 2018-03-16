@@ -19,8 +19,8 @@ sass:
   style: compressed
 
 collections:
-  gallery:
-    output: true
+  art:
+    output: false
 
 exclude:
   - Gemfile

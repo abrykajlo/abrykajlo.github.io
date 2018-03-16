@@ -1,17 +1,18 @@
 ---
+title: Gallery of AdamBrykajlo.ca
 layout: default
 menu: gallery
 order: 3
 published: true
+images:
+    - business_cat
+    - face
+    - groovy
+    - happy_bathtub
+    - head
+    - karl
+    - lola
+    - self_portrait
+    - smoke
 ---
-{% assign number = 1 %}
-<div class="make-gallery-grid">
-{% for image in site.gallery %}
-    <div class="item-{{ number }} thumb">
-        <a href="{{ image.url }}">
-            <img src="{{ image.thumbnail }}" alt="{{ image.alt }}"/>
-        </a>
-    </div>
-{% assign number = number | plus: 1 %}
-{% endfor %}
-</div>
+{% include gallery.html name="main" images=page.images %}

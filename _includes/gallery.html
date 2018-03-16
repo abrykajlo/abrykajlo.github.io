@@ -1,0 +1,16 @@
+{% assign number = 1 %}
+<div class="{{ include.name }}-gallery make-gallery-grid">
+{% for image in site.art %}
+{% if include.images contains image.name %}
+    <div class="item-{{ number }} thumb">
+        <a href="{{ image.image }}" >
+            <img src="{{ image.thumbnail }}" alt="{{ image.alt }}"/>
+        </a>
+    </div>
+{% assign number = number | plus: 1 %}
+{% endif %}
+{% endfor %}
+</div>
+<script>
+baguetteBox.run('.{{ include.name }}-gallery');
+</script>

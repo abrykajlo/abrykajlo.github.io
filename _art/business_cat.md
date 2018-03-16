@@ -1,5 +1,5 @@
 ---
-layout: image
+name: business_cat
 image: /images/gallery/business_cat.jpg
 thumbnail: /images/gallery/thumbnails/business_cat.jpg
 alt: This cat means business
