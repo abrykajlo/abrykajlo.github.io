@@ -8,6 +8,10 @@ h1 {
 	white-space: nowrap
 }
 
+hr {
+	border-color: #fbc02d;
+}
+
 .navbar {
 	margin-bottom: 30px;
 }
@@ -57,10 +61,15 @@ h1 {
 	margin-bottom: 0;
 }
 
-.card-title > h3 {
+.card-title > a > h3 {
+	color: white;
 	font-weight: 900;
 	position: relative;
 	top: 0.2em;
+}
+
+.card-title > a:hover {
+	text-decoration-color: white;
 }
 
 .card-subtitle {
@@ -91,9 +100,23 @@ h1 {
 
 /* gallery */
 
-.make-gallery-grid {
+.make-gallery-grid-3 {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 2%;
+	max-width: 100%;
+}
+
+.make-gallery-grid-2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+	grid-gap: 2%;
+	max-width: 100%;
+}
+
+.make-gallery-grid-1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 600px);
 	grid-gap: 2%;
 	max-width: 100%;
 }
@@ -108,10 +131,6 @@ h1 {
 
 img.gallery {
 	max-width: 100%;
-}
-
-.ekko-lightbox {
-	width: 100%;
 }
 
 /* The footer CSS is originally from https://tutorialzine.com/2015/01/freebie-5-responsive-footer-templates */

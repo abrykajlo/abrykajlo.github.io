@@ -3,7 +3,6 @@ title: About Me
 layout: default
 menu: about
 order: 4
-published: false
 ---
 
 <div class="row">
