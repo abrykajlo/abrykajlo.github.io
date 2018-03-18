@@ -4,6 +4,14 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+	white-space: nowrap
+}
+
+hr {
+	border-color: #fbc02d;
+}
+
 .navbar {
 	margin-bottom: 30px;
 }
@@ -53,10 +61,15 @@ body {
 	margin-bottom: 0;
 }
 
-.card-title > h3 {
+.card-title > a > h3 {
+	color: white;
 	font-weight: 900;
 	position: relative;
 	top: 0.2em;
+}
+
+.card-title > a:hover {
+	text-decoration-color: white;
 }
 
 .card-subtitle {
@@ -87,9 +100,23 @@ body {
 
 /* gallery */
 
-.make-gallery-grid {
+.make-gallery-grid-3 {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 2%;
+	max-width: 100%;
+}
+
+.make-gallery-grid-2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+	grid-gap: 2%;
+	max-width: 100%;
+}
+
+.make-gallery-grid-1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 600px);
 	grid-gap: 2%;
 	max-width: 100%;
 }

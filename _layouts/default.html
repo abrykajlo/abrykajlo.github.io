@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <title>{{ page.title }}</title>
+      {% feed_meta %}
+      <!-- GOOGLE ANALYTICS -->
       {% include google_analytics.html %}
+      <!-- FONT AWESOME -->
       <script src="https://use.fontawesome.com/b4ed5ef24f.js"></script>
+      <!-- BOOTSTRAP CSS -->
       <link rel="stylesheet" 
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
       integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
       crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+      <!-- GOOGLE FONT -->
+      <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100">
+      <!-- BAGUETTEBOX CSS -->
+      <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+      <!-- ADAMBRYKAJLO.CA CSS -->
       <link rel="stylesheet"
       href="/css/main.css">
+      <!-- FOR PROPER SCALING ON MOBILE DEVICES -->
       <meta name="viewport" 
       content="width=device-width, initial-scale=1">
   </head>
   <body>
+      <!-- JQUERY JS -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
       crossorigin="anonymous"></script>
+      <!-- POPPER JS -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" 
       integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" 
       crossorigin="anonymous"></script>
+      <!-- BOOTSTRAP JS -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
       integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" 
       crossorigin="anonymous"></script>
+      <!-- LIGHTBOX JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.js">
+      </script>
+      <!-- ADAMBRYKAJLO.CA JS -->
       <script src="/js/main.js"></script>
     <!--Header goes here-->
     {% include header.html %}
@@ -33,5 +52,6 @@
     </main>
     <!-- Footer goes here -->
     {% include footer.html %}
+    <!-- LIGHTBOX SETUP -->
   </body>
 </html>
