@@ -13,5 +13,4 @@ image: /images/gallery/thumbnails/face.jpg
 category: art
 tags:
   - drawing
-
 ---

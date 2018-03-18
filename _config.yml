@@ -1,11 +1,13 @@
 title: Adam Brykajlo
 email: adam.brykajlo@gmail.com
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: ""
-url: ""
+  A blog about my adventures in drawing and digital art
+  and possibly a foray into webassembly and webgl programming
+  in C++.
+baseurl: "www.adambrykajlo.ca"
+url: "www.adambrykajlo.ca"
+
+author: Adam Brykajlo
 linkedin: abrykajlo
 github:  abrykajlo
 twitter: AdamBrykajlo
