@@ -7,7 +7,7 @@
       <h3 class="text-center">{{ post.date | date: "%Y" }}</h3>
     </div>
     <div class="card-title h-100 align-middle">
-      <a href="{{ site.url }}{{ post.url }}">
+      <a href="{{ post.url }}">
         <h3>{{ post.title }}</h3>
       </a>
     </div>  
@@ -17,12 +17,12 @@
     <div class="card-text">
 {{ post.content | strip_html | truncate: 400 }}
     </div>
-    <a href="{{ site.url }}{{ post.url }}" class="card-link btn btn-primary">Read More</a>
+    <a href="{{ post.url }}" class="card-link btn btn-primary">Read More</a>
 {% else %}
     <div class="card-text">
 {% include gallery.html id=id images=post.images  %}
     </div>
-    <a href="{{ site.url }}{{ post.url }}" class="card-link btn btn-primary">Leave A Comment</a>
+    <a href="{{ post.url }}" class="card-link btn btn-primary">Leave A Comment</a>
 {% endif %}
   </div>
 {% if post.tags.size > 0 %}  

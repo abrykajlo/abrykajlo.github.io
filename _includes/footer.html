@@ -13,7 +13,7 @@
 {% for node in page_list %}
 {% if node.menu %}
         {{ period }}
-        <a href="{{ site.url }}{{ node.url }}">{{ node.menu | capitalize }}</a>
+        <a href="{{ node.url }}">{{ node.menu | capitalize }}</a>
 {% if period == '' %}
 {% assign period = '·' %}
 {% endif %}

@@ -3,7 +3,6 @@ title: Gallery of AdamBrykajlo.ca
 layout: default
 menu: gallery
 order: 3
-published: true
 images:
     - business_cat
     - face
@@ -15,4 +14,4 @@ images:
     - self_portrait
     - smoke
 ---
-{% include gallery.html name="main" images=page.images %}
+{% include gallery.html id="main" images=page.images %}

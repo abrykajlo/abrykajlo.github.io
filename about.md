@@ -7,7 +7,7 @@ order: 4
 
 <div class="row">
   <div class="col-12 col-lg-5 order-1 order-lg-2 d-flex">
-    <img class="headshot rounded-circle mr-auto ml-auto" src="{{site.url}}/images/headshot.jpg"/>
+    <img class="headshot rounded-circle mr-auto ml-auto" src="/images/headshot.jpg"/>
   </div>
   <div class="col-12 col-lg-7 order-2 order-lg-1">
     <p>

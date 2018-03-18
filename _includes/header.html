@@ -1,7 +1,7 @@
 <header class="navbar navbar-inverse navbar-expand-md">
   <div class="container">
-    <a class="navbar-brand" href="{{ site.base }}">
-      <img class="rounded-circle" height="80px" src="{{ site.url }}/images/logo.svg"/>
+    <a class="navbar-brand" href="/">
+      <img class="rounded-circle" height="80px" src="/images/logo.svg"/>
     </a>
     <h1 nowrap>
       Adam Brykajlo
@@ -20,7 +20,7 @@
 {% assign active = ' active' %}
 {% endif %}
         <li class="nav-item{{ active }}">
-          <a class="nav-link" href="{{ site.url }}{{ node.url }}">{{ node.menu | upcase }}</a>
+          <a class="nav-link" href="{{ node.url }}">{{ node.menu | upcase }}</a>
         </li>
 {% endif %}
 {% endfor %}

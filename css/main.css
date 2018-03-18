@@ -16,6 +16,10 @@ hr {
 	margin-bottom: 30px;
 }
 
+.nav-item {
+	font-size: 1.25em;
+}
+
 .nav-item.active {
     text-decoration: underline;
 }
