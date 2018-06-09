@@ -36,6 +36,34 @@ hr {
 	color: white;
 }
 
+/* Canvas */
+#canvas-container {
+	width: 100%;
+	text-align: center;
+}
+
+#canvas {
+	display: inline;
+}
+
+/* Highlight */
+figure.highlight {
+	background-color: #424242;
+	padding: 1em;
+}
+
+.highlight > * {
+	color: #fbc02d;
+}
+
+.kt, .p, .o {
+	color: #009688
+}
+
+.n {
+	color: #8bc34a;
+}
+
 /* Post Cards */
 
 .btn-primary {
