@@ -37,4 +37,4 @@ int main()
 }
 {% endhighlight %}
 
-Some immediate next steps are: ideally I'd want to figure out the appropriate width to render on different screen sizes. A large part of the difficulty of this project is that WebAssembly currently has little support for DOM manipulation or querying. This makes it more difficult for me especially as javascript is not my forte but I am still excited to get to work on a polyglot programming project, something I have not done a lot in the past.
+Some immediate next steps are: ideally I'd want to figure out the appropriate width to render on different screen sizes and I must write a class to hold my shaders. A large part of the difficulty of this project is that WebAssembly currently has little support for DOM manipulation or querying. This makes it more difficult for me especially as javascript is not my forte but I am still excited to get to work on a polyglot programming project, something I have not done a lot in the past.
