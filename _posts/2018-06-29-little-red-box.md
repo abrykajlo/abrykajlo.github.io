@@ -1,6 +1,7 @@
 ---
 title: Little Red Box
 layout: post
+category: programming
 ---
 
 {% include canvas.html main='lrb' %}
