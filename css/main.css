@@ -8,8 +8,23 @@ h1 {
 	white-space: nowrap
 }
 
+h2 {
+	padding-top: 0.8em;
+	padding-bottom: 0.2em; 
+}
+
 hr {
 	border-color: #fbc02d;
+}
+
+a {
+	color: white;
+	text-decoration-line: underline;
+	text-decoration-color: #fbc02d;
+}
+
+a:hover {
+	color: #6d6d6d;
 }
 
 .navbar {
