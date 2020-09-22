@@ -1,0 +1,18 @@
+{
+  "name": "abrykajlo.github.io",
+  "version": "1.0.0",
+  "description": "Personal Webpage",
+  "main": "main.js",
+  "repository": "git@github.com:abrykajlo/abrykajlo.github.io.git",
+  "author": "Adam Brykajlo <adam.brykajlo@gmail.com>",
+  "scripts": {
+    "build": "",
+    "publish": "gh-pages -d dist -b publish"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

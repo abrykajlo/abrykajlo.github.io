@@ -1,3 +1,10 @@
-_site
+# npm
+node_modules
+
+# distribution
+dist/*
+!dist/CNAME
+!dist/data
+
 .sass-cache
 .jekyll-metadata
