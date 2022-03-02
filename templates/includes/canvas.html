@@ -1,0 +1,12 @@
+<div id="canvas-container">
+<canvas id="canvas"></canvas>
+</div>
+<script>
+  var Module = {
+    canvas: function(){
+      var canvas = document.getElementById('canvas');
+      return canvas;
+    }()
+  };
+</script>
+<script async type="text/javascript" src="../../../js/{{ include.main }}.js"></script>

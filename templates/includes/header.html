@@ -1,0 +1,30 @@
+<header class="navbar navbar-inverse navbar-expand-md">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="rounded-circle" height="80px" src="/images/logo.svg"/>
+    </a>
+    <h1 nowrap>
+      Adam Brykajlo
+    </h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+      <i class="fa fa-bars fa-lg"></i>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+      <ul class="navbar-nav mt-2 mt-lg-0">
+{# TODO {% set page_list = site.pages | sort(attribute='order') %}
+{% for node in page_list %}
+{% if node.menu %}
+{% set active = '' %}
+{% if page.menu == node.menu %}
+{% set active = ' active' %}
+{% endif %}
+        <li class="nav-item{{ active }}">
+          <a class="nav-link" href="{{ node.url }}">{{ node.menu | upcase }}</a>
+        </li>
+{% endif %}
+{% endfor %}#}
+      </ul>
+    </div>
+  </div>
+</header>
