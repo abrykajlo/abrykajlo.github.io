@@ -1,10 +1,6 @@
----
-title: About Me
-layout: default
-menu: about
-order: 3
----
+{% extends "base.html" %}
 
+{% block content %}
 <div class="row">
   <div class="col-12 col-lg-5 order-1 order-lg-2 d-flex">
     <img class="headshot rounded-circle mr-auto ml-auto" src="/images/headshot.jpg"/>
@@ -21,3 +17,4 @@ order: 3
     </p>
   </div>
 </div>
+{% endblock content %}

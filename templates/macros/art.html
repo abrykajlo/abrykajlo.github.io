@@ -1,0 +1,37 @@
+{% macro get_gallery_images(names) %}
+{% set gallery = get_section(path="gallery/_index.md") %}
+{% set images = [] %}
+{% for image in gallery.extra.art %}
+{% if names is containing(image.name) %}
+{% set images = images | concat(with=image) %}
+{% endif %}
+{% endfor %}
+{{ images }}
+{% endmacro get_gallery_art %}
+
+{% macro gallery(images, id="") %}
+{% if images | length == 1 %}
+<img class="gallery" src="{{ images[0] }}" alt="{{ images[0].alt }}"/>
+{% elif images | length >= 9 %}
+{% set size_class = "make-gallery-grid-3" %}
+{% elif images | length >= 4 %}
+{% set size_class = "make-gallery-grid-2" %}
+{% else %}
+{% set size_class = "make-gallery-grid-1" %}
+{% endif %}
+
+{% if images | length > 1 %}
+<div class="gallery-{{ id }} {{ size_class }}">
+{% for image in images %}
+    <div class="item-{{ loop.index }} thumb">
+        <a href="{{ image.image }}" >
+            <img src="{{ image.thumbnail }}" alt="{{ image.alt }}"/>
+        </a>
+    </div>
+{% endfor %}
+</div>
+<script>
+    baguetteBox.run('.gallery-{{ id }}');
+</script>
+{% endif %}
+{% endmacro %}

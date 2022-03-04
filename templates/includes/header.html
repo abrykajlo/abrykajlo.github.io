@@ -12,18 +12,16 @@
     
     <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
       <ul class="navbar-nav mt-2 mt-lg-0">
-{# TODO {% set page_list = site.pages | sort(attribute='order') %}
-{% for node in page_list %}
-{% if node.menu %}
-{% set active = '' %}
-{% if page.menu == node.menu %}
-{% set active = ' active' %}
-{% endif %}
-        <li class="nav-item{{ active }}">
-          <a class="nav-link" href="{{ node.url }}">{{ node.menu | upcase }}</a>
+	{% set main_section = get_section(path="_index.md") %}
+	{% set menu_paths = main_section.subsections %}
+	{% for menu_path in menu_paths %}
+	{% set menu = get_section(path=menu_path) %}
+	{% set name = menu.extra.menu.name %}
+	{% set menu = get_section(path=menu.extra.menu.path) %}
+	<li class="nav-item active">
+          <a class="nav-link" href="{{ menu.extra.menu.path }}">{{ menu.extra.menu.name | upper }}</a>
         </li>
-{% endif %}
-{% endfor %}#}
+{% endfor %}
       </ul>
     </div>
   </div>

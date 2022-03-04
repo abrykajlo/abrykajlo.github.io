@@ -1,7 +1,14 @@
-{% import "macros/macros.html" as macros %}
+{% import "macros/art.html" as art %}
 
 {% extends "post.html" %}
 
 {% block content %}
-{# TODO {{ macros::gallery(id="post", images=page.extra.images) }} #}
+{% if section %}
+{% set images = section.extra.art %}
+{% elif page %}
+{% set images = art::get_gallery_images(names=page.extra.images) %}
+{% endif %}
+<p>hello world</p>
+{{ images | as_str }}
+{# art::gallery(id="post", images=images) #}
 {% endblock content %}

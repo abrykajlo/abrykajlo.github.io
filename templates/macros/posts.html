@@ -1,0 +1,33 @@
+{% macro postcard(post, id) %}
+<div class="card">
+  <div class="card-header">
+    <div class="card-subtitle h-100">
+      <h3 class="text-center">{{ post.date | date(format="%b %d") }}</h3>
+      <h3 class="text-center">{{ post.date | date(format="%Y") }}</h3>
+    </div>
+    <div class="card-title h-100 align-middle">
+      <a href="{{ post.path }}">
+        <h3>{{ post.title }}</h3>
+      </a>
+    </div>  
+  </div>
+  <div class="card-body">
+{# TODO {% if post.template == "post" %}
+    <div class="card-text">
+{{ post.content | striptags | truncate(length=400) }}
+    </div>
+    <a href="{{ post.path }}" class="card-link btn btn-primary">Read More</a>
+{% else %}
+    <div class="card-text">
+{{ macros::gallery(id=id, images=post.images) }}
+    </div>
+    <a href="{{ post.url }}" class="card-link btn btn-primary">Leave A Comment</a>
+{% endif %} #}
+  </div>
+{# TODO tags {% if post.tags.size > 0 %}  
+  <div class="card-footer">
+    tags: {{ post.tags | join(sep=' | ') }}
+  </div>
+{% endif %} #}
+</div>
+{% endmacro postcard %}

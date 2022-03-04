@@ -1,11 +1,10 @@
-{% import "macros/macros.html" as macros %}
+{% import "macros/posts.html" as posts %}
 
 {% extends "base.html" %}
 
 {% block content %}
-{# TODO get posts section working #}
-{% set posts = get_section(path="posts/_index.md") %}
-{% for post in posts.pages %}
-{{ macros::postcard(post=post, id=loop.index) }}
+{% set site = get_section(path="_index.md") %}
+{% for post in site.pages %}
+{{ posts::postcard(post=post, id=loop.index) }}
 {% endfor %}
 {% endblock content %}

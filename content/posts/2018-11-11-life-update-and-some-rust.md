@@ -1,5 +1,6 @@
 +++
 title = "Life Update And Some Rust"
+date = 2018-11-11
 category = "personal"
 +++
 

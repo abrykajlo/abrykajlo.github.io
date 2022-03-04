@@ -1,5 +1,6 @@
 +++
 title = "Little Red Box"
+date = 2018-06-29
 category = "programming"
 +++
 

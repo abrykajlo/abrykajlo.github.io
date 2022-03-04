@@ -2,10 +2,12 @@
 
 <h1>{{ page.title }}</h1>
 <h3>{{ page.date | date(format="%B %e, %Y") }}</h3>
-<h5>by {{ site.author }}</h5>
+<h5>by {{ config.extra.author }}</h5>
 <hr>
 
-{{ content }}
+{% block content %}
+{{ page.content }}
+{% endblock content %}
 
 {% if page.comments == null or page.comments == true %}
 {% include "includes/comments.html" %}
