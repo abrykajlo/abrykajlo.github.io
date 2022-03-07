@@ -12,16 +12,9 @@
     
     <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
       <ul class="navbar-nav mt-2 mt-lg-0">
-	{% set main_section = get_section(path="_index.md") %}
-	{% set menu_paths = main_section.subsections %}
-	{% for menu_path in menu_paths %}
-	{% set menu = get_section(path=menu_path) %}
-	{% set name = menu.extra.menu.name %}
-	{% set menu = get_section(path=menu.extra.menu.path) %}
 	<li class="nav-item active">
-          <a class="nav-link" href="{{ menu.extra.menu.path }}">{{ menu.extra.menu.name | upper }}</a>
+          <a class="nav-link" href="">TODO MENU</a>
         </li>
-{% endfor %}
       </ul>
     </div>
   </div>

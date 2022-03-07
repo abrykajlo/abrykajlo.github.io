@@ -1,7 +1,7 @@
 {% macro get_gallery_images(names) %}
-{% set gallery = get_section(path="gallery/_index.md") %}
+{% set gallery = load_data(path="content/gallery/data.toml") %}
 {% set images = [] %}
-{% for image in gallery.extra.art %}
+{% for image in gallery.images %}
 {% if names is containing(image.name) %}
 {% set images = images | concat(with=image) %}
 {% endif %}

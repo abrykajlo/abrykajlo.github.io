@@ -1,0 +1,53 @@
+[[images]]
+name = "business_cat"
+image = "/images/gallery/business_cat.jpg"
+thumbnail = "/images/gallery/thumbnails/business_cat.jpg"
+alt = "This cat means business"
+
+[[images]]
+name = "face"
+image = "/images/gallery/face.jpg"
+thumbnail = "/images/gallery/thumbnails/face.jpg"
+alt = "A picture of a face"
+
+[[images]]
+name = "groovy"
+image = "/images/gallery/Groovy.jpg"
+thumbnail = "/images/gallery/thumbnails/Groovy.jpg"
+alt = "Ash Vs Evil Dead"
+
+[[images]]
+name = "happy_bathtub"
+image = "/images/gallery/happy_bathtub.jpg"
+thumbnail = "/images/gallery/thumbnails/happy_bathtub.jpg"
+alt = "A happy bathtub"
+
+[[images]]
+name = "head"
+image = "/images/gallery/head.jpg"
+thumbnail = "/images/gallery/thumbnails/head.jpg"
+alt = "A head of its time"
+
+[[images]]
+name = "karl"
+image = "/images/gallery/karl.jpg"
+thumbnail = "/images/gallery/thumbnails/karl.jpg"
+alt = "A drawing of one of my closest friends"
+
+[[images]]
+name = "lola"
+image = "/images/gallery/lola.jpg"
+thumbnail = "/images/gallery/thumbnails/lola.jpg"
+alt = "Drawing of my older sisters dog"
+
+[[images]]
+name = "self_portrait"
+image = "/images/gallery/self_portrait_1.jpg"
+thumbnail = "/images/gallery/thumbnails/self_portrait_1.jpg"
+alt = "Self Portrait"
+
+[[images]]
+name = "smoke"
+image = "/images/gallery/smoke.jpg"
+thumbnail = "/images/gallery/thumbnails/smoke.jpg"
+alt = "Smoke"

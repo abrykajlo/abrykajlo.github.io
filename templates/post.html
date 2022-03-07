@@ -1,12 +1,11 @@
 {% extends "base.html" %}
 
+{% block content %}
 <h1>{{ page.title }}</h1>
 <h3>{{ page.date | date(format="%B %e, %Y") }}</h3>
 <h5>by {{ config.extra.author }}</h5>
 <hr>
-
-{% block content %}
-{{ page.content }}
+{{ page.content | safe }}
 {% endblock content %}
 
 {% if page.comments == null or page.comments == true %}

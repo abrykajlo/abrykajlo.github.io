@@ -1,3 +1,5 @@
+{% import "macros/art.html" as art %}
+
 {% macro postcard(post, id) %}
 <div class="card">
   <div class="card-header">
@@ -12,22 +14,22 @@
     </div>  
   </div>
   <div class="card-body">
-{# TODO {% if post.template == "post" %}
+{% if not post.extra.images %}
     <div class="card-text">
-{{ post.content | striptags | truncate(length=400) }}
+{{ post.content | striptags | truncate(length=400, end="...") | safe }}
     </div>
     <a href="{{ post.path }}" class="card-link btn btn-primary">Read More</a>
 {% else %}
     <div class="card-text">
-{{ macros::gallery(id=id, images=post.images) }}
+{# art::gallery(id=id, images=post.extra.images) #}
     </div>
-    <a href="{{ post.url }}" class="card-link btn btn-primary">Leave A Comment</a>
-{% endif %} #}
+    <a href="{{ post.path }}" class="card-link btn btn-primary">Leave A Comment</a>
+{% endif %}
   </div>
-{# TODO tags {% if post.tags.size > 0 %}  
+{% if post.taxonomies.tags and post.taxonomies.tags | length > 0 %}  
   <div class="card-footer">
-    tags: {{ post.tags | join(sep=' | ') }}
+    tags: {{ post.taxonomies.tags | join(sep=' | ') | safe }}
   </div>
-{% endif %} #}
+{% endif %}
 </div>
 {% endmacro postcard %}
