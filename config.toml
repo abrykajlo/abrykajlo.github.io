@@ -8,8 +8,6 @@ description = """\
   in C++.\
   """
 
-output_dir = "docs"
-
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
