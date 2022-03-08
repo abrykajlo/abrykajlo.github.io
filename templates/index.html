@@ -2,9 +2,13 @@
 
 {% extends "base.html" %}
 
+{% block header %}
+{{ header::menu(item="home") }}
+{% endblock %}
+
 {% block content %}
 {% set site = get_section(path="_index.md") %}
 {% for post in site.pages %}
 {{ posts::postcard(post=post, id=loop.index) }}
 {% endfor %}
-{% endblock content %}
+{% endblock %}

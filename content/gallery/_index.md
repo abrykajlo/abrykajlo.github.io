@@ -1,5 +1,4 @@
 +++
 title = "Gallery of AdamBrykajlo.ca"
-template = "base.html"
-weight = 2
+template = "gallery.html"
 +++

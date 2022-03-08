@@ -1,3 +1,4 @@
+{% macro menu(item="") %}
 <header class="navbar navbar-inverse navbar-expand-md">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -12,10 +13,19 @@
     
     <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
       <ul class="navbar-nav mt-2 mt-lg-0">
-	<li class="nav-item active">
-          <a class="nav-link" href="">TODO MENU</a>
+	{% set menu = load_data(path="data/menu.toml") %}
+	{% for menu_item in menu.items %}
+	{% set active = "" %}
+	{% set menu_section = get_section(path=menu_item.path) %}
+	{% if menu_item.name == item %}
+	{% set active = "active" %}
+	{% endif %}
+	<li class="nav-item {{ active }}">
+          <a class="nav-link" href="{{ menu_section.path }}">{{ menu_item.name | upper }}</a>
         </li>
+	{% endfor %}
       </ul>
     </div>
   </div>
 </header>
+{% endmacro %}

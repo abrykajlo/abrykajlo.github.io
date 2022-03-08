@@ -1,14 +1,11 @@
 {% import "macros/art.html" as art %}
 
-{% extends "post.html" %}
+{% extends "base.html" %}
+
+{% block header %}
+{{ header::menu(item="gallery") }}
+{% endblock %}
 
 {% block content %}
-{% if section %}
-{% set images = section.extra.art %}
-{% elif page %}
-{% set images = art::get_gallery_images(names=page.extra.images) %}
-{% endif %}
-<p>hello world</p>
-{{ images | as_str }}
-{# art::gallery(id="post", images=images) #}
+{{ art::gallery(id="gallery") }}
 {% endblock content %}

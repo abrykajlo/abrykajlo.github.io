@@ -1,17 +1,21 @@
-{% macro get_gallery_images(names) %}
-{% set gallery = load_data(path="content/gallery/data.toml") %}
+{% macro gallery(names="all", id="") %}
+
+{# Get Images #}
+{% set gallery = load_data(path="data/gallery.toml") %}
+{% if names == "all" %}
+{% set images = gallery.images %}
+{% else %}
 {% set images = [] %}
 {% for image in gallery.images %}
 {% if names is containing(image.name) %}
-{% set images = images | concat(with=image) %}
+{% set_global images = images | concat(with=image) %}
 {% endif %}
 {% endfor %}
-{{ images }}
-{% endmacro get_gallery_art %}
+{% endif %}
 
-{% macro gallery(images, id="") %}
+{# Create Gallery#}
 {% if images | length == 1 %}
-<img class="gallery" src="{{ images[0] }}" alt="{{ images[0].alt }}"/>
+<img class="gallery" src="{{ images[0].image }}" alt="{{ images[0].alt }}"/>
 {% elif images | length >= 9 %}
 {% set size_class = "make-gallery-grid-3" %}
 {% elif images | length >= 4 %}

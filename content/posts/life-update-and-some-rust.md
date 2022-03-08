@@ -1,7 +1,10 @@
 +++
 title = "Life Update And Some Rust"
+path = "posts/2018/11/11/life-update-and-some-rust"
 date = 2018-11-11
-category = "personal"
+
+[taxonomies]
+category = ["personal"]
 +++
 
 Writing code and writing words about said code is not my forte. While the coding continued on the WASM renderer I was working on, the blog posts stopped. Life gets busy and habits die hard. Well a lot has happened since then and while I continued the coding portion up until mid-August I have stopped since then. I got to the point of having a full Shader and ShaderProgram class implementation wrapping the OpenGL code. Alas you work on projects to figure out what sticks and this has not stuck.
@@ -26,7 +29,7 @@ I would like to stop dabbling and start making. I am a capable C++ developer but
 
 [Johan Andersson from SEED tweets about Rust](https://twitter.com/repi/status/1002512705792733184)
 
-[Chucklefish whitepaper on Rust at Chucklefish](https://www.rust-lang.org/pdfs/Rust-Chucklefish-Whitepaper.pdf)
+[Chucklefish whitepaper on Rust at Chucklefish](https://prev.rust-lang.org/pdfs/Rust-Chucklefish-Whitepaper.pdf)
 
 [Andrea Pessino, CTO at Ready at Dawn, announces Rust for studio](https://twitter.com/andreapessino/status/1021532074153394176?lang=en)
 

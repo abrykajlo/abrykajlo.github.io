@@ -1,8 +1,15 @@
+{% import "macros/header.html" as header %}
 <!DOCTYPE html>
 <html>
   <head>
-      <title>{# page.title #}</title>
-      {# feed_meta #}
+    {% if page.title %}
+    {% set title = page.title %}
+    {% elif section.title %}
+    {% set title = section.title %}
+    {% else %}
+    {% set title = config.title %}
+    {% endif %}
+      <title>{{ title }}</title>
       <!-- GOOGLE ANALYTICS -->
       {% include "includes/google_analytics.html" %}
       <!-- FONT AWESOME -->
@@ -43,15 +50,17 @@
       </script>
       <!-- ADAMBRYKAJLO.CA JS -->
       <script src="/js/main.js"></script>
-    <!--Header goes here-->
-    {% include "includes/header.html" %}
+      <!--Header goes here-->
+      {% block header %}
+      {{ header::menu() }}
+      {% endblock %}
     <main>
       <div class="container">
         {% block content %}
 	{% if section %}
-	{{ section.content }}
+	{{ section.content | safe }}
 	{% elif page %}
-	{{ section.content }}
+	{{ page.content | safe }}
 	{% endif %}
 	{% endblock content %}
       </div>

@@ -16,12 +16,16 @@
   <div class="card-body">
 {% if not post.extra.images %}
     <div class="card-text">
-{{ post.content | striptags | truncate(length=400, end="...") | safe }}
+      {% if post.extra.description %}
+      {{ post.extra.description | truncate(length=400, end="...") }}
+      {% else %}
+      {{ post.content | striptags | truncate(length=400, end="...") | safe }}
+      {% endif %}
     </div>
     <a href="{{ post.path }}" class="card-link btn btn-primary">Read More</a>
 {% else %}
     <div class="card-text">
-{# art::gallery(id=id, images=post.extra.images) #}
+{{ art::gallery(id=id, names=post.extra.images) }}
     </div>
     <a href="{{ post.path }}" class="card-link btn btn-primary">Leave A Comment</a>
 {% endif %}

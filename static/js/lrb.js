@@ -1435,9 +1435,9 @@ function integrateWasmJS() {
 
   var method = 'native-wasm';
 
-  var wasmTextFile = '../../../js/lrb.wast';
-  var wasmBinaryFile = '../../../js/lrb.wasm';
-  var asmjsCodeFile = '../../../js/lrb.temp.asm.js';
+  var wasmTextFile = "lrb.wast";
+  var wasmBinaryFile = "lrb.wasm";
+  var asmjsCodeFile = "lrb.temp.asm.js";
 
   if (typeof Module['locateFile'] === 'function') {
     if (!isDataURI(wasmTextFile)) {

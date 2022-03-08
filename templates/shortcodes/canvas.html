@@ -1,12 +1,16 @@
 <div id="canvas-container">
 <canvas id="canvas"></canvas>
 </div>
+{% set folder = get_url(path="js") %}
 <script>
   var Module = {
     canvas: function(){
       var canvas = document.getElementById('canvas');
       return canvas;
-    }()
+    }(),
+    locateFile: function(file){
+      return "{{ folder | safe }}/" + file;
+    }
   };
 </script>
-<script async type="text/javascript" src="../../../js/{{ include.main }}.js"></script>
+<script async src="{{ folder ~ "/" ~ js | safe }}"></script>

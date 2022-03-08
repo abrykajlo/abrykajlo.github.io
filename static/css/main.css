@@ -18,9 +18,7 @@ hr {
 }
 
 a {
-	color: white;
-	text-decoration-line: underline;
-	text-decoration-color: #fbc02d;
+	color: #fbc02d;
 }
 
 a:hover {
@@ -36,7 +34,9 @@ a:hover {
 }
 
 .nav-item.active {
-    text-decoration: underline;
+        text-decoration-line: underline;
+	text-decoration-color: #fbc02d;
+
 }
 
 .nav-link {

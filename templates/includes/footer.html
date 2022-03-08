@@ -3,22 +3,19 @@
     <div class="footer-right">
       <a href="https://linkedin.com/in/{{ config.extra.linkedin }}"><i class="fa fa-linkedin"></i></a>
       <a href="https://github.com/{{ config.extra.github }}"><i class="fa fa-github-alt"></i></a>
-      <a href="https://twitter.com/{{ config.extra.twitter }}"><i class="fa fa-twitter"></i></a>
-      <a href="/feed.xml"><i class="fa fa-rss"></i></a>
+      <a href="/atom.xml"><i class="fa fa-rss"></i></a>
     </div>
     <div class="footer-left">
       <p class="footer-links">
-{# TODO fix this {% set period = '' %}
-{% set page_list = site.pages | sort(attribute='order') %}
-{% for node in page_list %}
-{% if node.menu %}
-        {{ period }}
-        <a href="{{ node.url }}">{{ node.menu | capitalize }}</a>
-{% if period == '' %}
-{% set period = '·' %}
+{% set period = "" %}
+{% set menu = load_data(path="data/menu.toml") %}
+{% for item in menu.items %}
+{{ period }}
+<a href="{{ item.path }}">{{ item.name | capitalize }}</a>
+{% if period == "" %}
+{% set_global period = " | " %}
 {% endif %}
-{% endif %}
-{% endfor %} #}
+{% endfor %}
       </p>
       <p>Adam Brykajlo &copy; 2017</p>
     </div>    
