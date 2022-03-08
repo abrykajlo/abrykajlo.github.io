@@ -1,0 +1,11 @@
+{% import "macros/art.html" as art %}
+
+{% extends "base.html" %}
+
+{% block header %}
+{{ header::menu(item="gallery") }}
+{% endblock %}
+
+{% block content %}
+{{ art::gallery(id="gallery") }}
+{% endblock content %}

@@ -1,0 +1,257 @@
+body {
+    background-color: #303030;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	white-space: nowrap
+}
+
+h2 {
+	padding-top: 0.8em;
+	padding-bottom: 0.2em; 
+}
+
+hr {
+	border-color: #fbc02d;
+}
+
+a {
+	color: #fbc02d;
+}
+
+a:hover {
+	color: #6d6d6d;
+}
+
+.navbar {
+	margin-bottom: 30px;
+}
+
+.nav-item {
+	font-size: 1.25em;
+}
+
+.nav-item.active {
+        text-decoration-line: underline;
+	text-decoration-color: #fbc02d;
+
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: #6d6d6d;
+}
+
+.navbar-toggler {
+	color: white;
+}
+
+/* Canvas */
+#canvas-container {
+	width: 100%;
+	text-align: center;
+}
+
+#canvas {
+	display: inline;
+}
+
+/* Highlight */
+figure.highlight {
+	background-color: #424242;
+	padding: 1em;
+}
+
+.highlight > * {
+	color: #fbc02d;
+}
+
+.kt, .p, .o {
+	color: #009688
+}
+
+.n {
+	color: #8bc34a;
+}
+
+/* Post Cards */
+
+.btn-primary {
+	color: white;
+	background-color: #424242;
+	border-color: #424242;
+}
+
+.btn-primary:hover {
+	background-color: #303030;
+	border-color: #303030;
+}
+
+.card {
+	background-color: #1b1b1b;
+	margin-bottom: 10px;
+}
+
+.card-header {
+	padding: 0;
+	border-bottom: 1px solid #fbc02d;
+	height: 5em;
+}
+
+.card-title {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.card-title > a > h3 {
+	color: white;
+	font-weight: 900;
+	position: relative;
+	top: 0.2em;
+}
+
+.card-title > a:hover {
+	text-decoration-color: white;
+}
+
+.card-subtitle {
+	background: #fbc02d;
+	color: #1b1b1b;
+	width: 7em;
+	display: inline-block;
+	margin-top: 0;
+	border-top-left-radius: 0.25rem;
+	margin-right: 2em;
+}
+
+.card-text {
+	margin-bottom: 10px;
+}
+
+.card-footer {
+	padding-top: 0;
+}
+
+/* about me page */
+.headshot {
+	border: 4px solid #fbc02d;
+	height: 350px;
+	width: 350px;
+	margin-bottom: 2em;
+}
+
+/* gallery */
+
+.make-gallery-grid-3 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 2%;
+	max-width: 100%;
+}
+
+.make-gallery-grid-2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+	grid-gap: 2%;
+	max-width: 100%;
+}
+
+.make-gallery-grid-1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 600px);
+	grid-gap: 2%;
+	max-width: 100%;
+}
+
+.thumb {
+	
+}
+
+.thumb img {
+	max-width: 100%;
+}
+
+img.gallery {
+	max-width: 100%;
+}
+
+/* The footer CSS is originally from https://tutorialzine.com/2015/01/freebie-5-responsive-footer-templates */
+
+.footer-distributed{
+	background-color: #1b1b1b;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #6d6d6d;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #303030;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
