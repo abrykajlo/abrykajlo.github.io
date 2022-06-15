@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    
+    
+      <title>Life Update And Some Rust</title>
+      <!-- GOOGLE ANALYTICS -->
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-30680897-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-30680897-2');
+</script>
+
+      <!-- FONT AWESOME -->
+      <script src="https://use.fontawesome.com/b4ed5ef24f.js"></script>
+      <!-- BOOTSTRAP CSS -->
+      <link rel="stylesheet" 
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" 
+      crossorigin="anonymous">
+      <!-- GOOGLE FONT -->
+      <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100">
+      <!-- BAGUETTEBOX CSS -->
+      <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+      <!-- ADAMBRYKAJLO.CA CSS -->
+      <link rel="stylesheet"
+      href="/css/main.css">
+      <!-- FOR PROPER SCALING ON MOBILE DEVICES -->
+      <meta name="viewport" 
+      content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+      <!-- JQUERY JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+      crossorigin="anonymous"></script>
+      <!-- POPPER JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" 
+      integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" 
+      crossorigin="anonymous"></script>
+      <!-- BOOTSTRAP JS -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
+      integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" 
+      crossorigin="anonymous"></script>
+      <!-- LIGHTBOX JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.js">
+      </script>
+      <!-- ADAMBRYKAJLO.CA JS -->
+      <script src="/js/main.js"></script>
+      <!--Header goes here-->
+      
+
+<header class="navbar navbar-inverse navbar-expand-md">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img class="rounded-circle" height="80px" src="/images/logo.svg"/>
+    </a>
+    <h1 nowrap>
+      Adam Brykajlo
+    </h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+      <i class="fa fa-bars fa-lg"></i>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+      <ul class="navbar-nav mt-2 mt-lg-0">
+	
+	
+	
+	
+	
+	
+	
+	<li class="nav-item active">
+          <a class="nav-link" href="&#x2F;">HOME</a>
+        </li>
+	
+	
+	
+	
+	<li class="nav-item ">
+          <a class="nav-link" href="&#x2F;gallery&#x2F;">GALLERY</a>
+        </li>
+	
+	
+	
+	
+	<li class="nav-item ">
+          <a class="nav-link" href="&#x2F;about&#x2F;">ABOUT</a>
+        </li>
+	
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <div class="container">
+        
+<h1>Life Update And Some Rust</h1>
+<h3>November 11, 2018</h3>
+<h5>by Adam Brykajlo</h5>
+<hr>
+<p>Writing code and writing words about said code is not my forte. While the coding continued on the WASM renderer I was working on, the blog posts stopped. Life gets busy and habits die hard. Well a lot has happened since then and while I continued the coding portion up until mid-August I have stopped since then. I got to the point of having a full Shader and ShaderProgram class implementation wrapping the OpenGL code. Alas you work on projects to figure out what sticks and this has not stuck.</p>
+<h2 id="a-new-angle">A New Angle</h2>
+<p>The problem I have been having is my C++ background is heavily Visual Studio based and there is no good VS2017 plugins for using with WebAssembly (and I am tired of trying to get CMake or Scons to work). Well I hate to say it but I think I am going to continue this same project in Rust. Well not hate, I love Rust, it's just that any time you hear WebAssembly you mostly hear &quot;Rust + WebAssembly&quot;. So yah, there is a band wagon and I am ready to jump on it.</p>
+<h2 id="not-just-personal">Not Just Personal</h2>
+<p>So recently I have achieved a big goal of mine. I am now proudly and excitedly now working at a game studio in Vancouver, Relic Entertainment. Now whats exciting about Rust is the potential I see it in impacting the games industry. In the last year I have heard of 3 game studios experimenting or outright adopting it. Ready At Dawn has been slowly converting their engine over and Chucklefish is working on an all new game called Witchbrook. I have also heard EAs SEED division has been doing some experimentation. I will post links below.</p>
+<h2 id="what-am-i-hoping-to-see">What Am I Hoping To See?</h2>
+<p>I think the most interesting thing with Rust is the ability to see the bigger picture without having to know the world. I have dabbled in Rust but I have yet to write any multithreaded code, Rusts namesake. Being able to start tackling concurrency without fear is a big thing to achieve. When you have many people of different skill levels touching a complicated code base something is bound to get broken (like all the time). Even the most skilled developers make mistakes from time to time. Rust enables its users by mitigating the types of mistakes available to make. Sticking to safe Rust means you're mostly only bound by logical errors. I hope to see more tools being created for content creators. Tools which have greater stability and less bugs which can have quicker release cycles without succumbing to crashes. It would be great to see companies be more productive and not have to overwork employees when approaching a deadline (games industry crunch!!??!?). I think there is huge potential for games to be more polished since play testing can focus on the gameplay and not on bugs or crashes.</p>
+<h2 id="what-am-i-hoping-to-achieve">What Am I Hoping To Achieve?</h2>
+<p>I would like to stop dabbling and start making. I am a capable C++ developer but with my level of experience sometimes learning concepts take a backseat to learning nuances of a language or making silly frustrating mistakes. Leaving that behind sounds great. Plus Rust is one of the most enjoyable languages I have used in a long time and I have used a lot of different languages (Haskell, Lisp, Go, Elm to name a few). I have recently finished the Rust Programming Book which I do recommend to anyone trying to learn the language. A great tip by the way if you have rust installed and want to read documentation or the rust book just use <code>rustup doc</code> and you will open a local copy of the doc for the version of rust you have installed. This month is Github's GameOff 2018 and I am working on a simple game by myself. It will be the first game I will write ever in Rust or any language for that matter. Next month is Advent of Code which is 25 days of coding challenges over at <a href="https://adventofcode.com/">Advent of Code</a> which I have commited to coding entirely in Rust...if I can make it the whole month.</p>
+<h2 id="links">Links</h2>
+<p><a href="https://twitter.com/repi/status/1002512705792733184">Johan Andersson from SEED tweets about Rust</a></p>
+<p><a href="https://prev.rust-lang.org/pdfs/Rust-Chucklefish-Whitepaper.pdf">Chucklefish whitepaper on Rust at Chucklefish</a></p>
+<p><a href="https://twitter.com/andreapessino/status/1021532074153394176?lang=en">Andrea Pessino, CTO at Ready at Dawn, announces Rust for studio</a></p>
+<p><a href="https://twitter.com/andreapessino/status/1042120425415700480?lang=en">Andrea Pessino how to learn Rust twitter thread</a></p>
+
+
+      </div>
+    </main>
+    <!-- Footer goes here -->
+    <footer class="footer-distributed">
+  <div class="container">
+    <div class="footer-right">
+      <a href="https://linkedin.com/in/abrykajlo"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/abrykajlo"><i class="fa fa-github-alt"></i></a>
+      <a href="/atom.xml"><i class="fa fa-rss"></i></a>
+    </div>
+    <div class="footer-left">
+      <p class="footer-links">
+
+
+
+
+<a href="_index.md">Home</a>
+
+
+
+
+ | 
+<a href="gallery&#x2F;_index.md">Gallery</a>
+
+
+ | 
+<a href="about&#x2F;_index.md">About</a>
+
+
+      </p>
+      <p>Adam Brykajlo &copy; 2017</p>
+    </div>    
+  </div>
+</footer>
+
+    <!-- LIGHTBOX SETUP -->
+  </body>
+</html>
