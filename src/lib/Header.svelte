@@ -1,22 +1,21 @@
-<script context="module" type="ts">
-  export type HeaderData = {
-    items: [HeaderItem],
-    active: string,
-  } 
+<script type="ts" context="module">
   export type HeaderItem = {
     name: string;
     path: string;
-  }
+  };
 </script>
 
 <script lang="ts">
-  export let data: HeaderData;
+  import { page } from '$app/stores';
+
+  import Fa from 'svelte-fa';
+  import { faBars } from '@fortawesome/free-solid-svg-icons'
 </script>
 
 <header class="navbar navbar-inverse navbar-expand-md">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <img class="rounded-circle" height="80px" src="/images/logo.svg" />
+      <img alt="logo" class="rounded-circle" height="80px" src="/images/logo.svg" />
     </a>
     <h1>Adam Brykajlo</h1>
     <button
@@ -25,13 +24,13 @@
       data-toggle="collapse"
       data-target="#navbarToggler"
     >
-      <i class="fa fa-bars fa-lg" />
+      <Fa icon={faBars} size='lg' />
     </button>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
       <ul class="navbar-nav mt-2 mt-lg-0">
-        {#each data.items as { name, path }}
-          <li class="nav-item{name === data.active ? ' active' : ''}">
+        {#each $page.data.header_items as { name, path }}
+          <li class="nav-item{name === $page.data.active_item ? ' active' : ''}">
             <a class="nav-link" href={path}>{name.toUpperCase()}</a>
           </li>
         {/each}
@@ -39,3 +38,34 @@
     </div>
   </div>
 </header>
+
+<style>
+  h1 {
+    white-space: nowrap;
+  }
+
+  .navbar {
+    margin-bottom: 30px;
+  }
+
+  .nav-item {
+    font-size: 1.25em;
+  }
+
+  .nav-item.active {
+    text-decoration-line: underline;
+    text-decoration-color: #fbc02d;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: #6d6d6d;
+  }
+
+  .navbar-toggler {
+    color: white;
+  }
+</style>
