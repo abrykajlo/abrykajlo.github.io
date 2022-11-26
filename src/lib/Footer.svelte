@@ -17,7 +17,7 @@
     <div class="footer-right">
       <a href="https://linkedin.com/in/{$page.data.me.linkedin}"><Fa icon={faLinkedin} /></a>
       <a href="https://github.com/{$page.data.me.github}"><Fa icon={faGithubAlt} /></a>
-      <!-- <a href="/atom.xml"><Fa icon={faRss} /></a> TODO: readd rss feed -->
+      <a href="/atom.xml"><Fa icon={faRss} /></a>
     </div>
     <div class="footer-left">
       <p class="footer-links">
