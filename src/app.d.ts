@@ -8,6 +8,7 @@ import type { Socials } from "$lib/Footer.svelte";
 declare namespace App {
 	// interface Locals {}
 	interface PageData {
+		title: string
 		active_item: string
 		header_items: HeaderItem[]
 		me: Socials

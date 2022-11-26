@@ -1,11 +1,13 @@
 <script lang="ts">
+  import { page } from '$app/stores';
+
   import Header from '$lib/Header.svelte';
   import Footer from '$lib/Footer.svelte';
 
   import '@fontsource/roboto/100.css';
 </script>
 <svelte:head>
-  <title>Up And Adam</title>
+  <title>{$page.data.title}</title>
   <!-- BOOTSTRAP CSS -->
   <link
     rel="stylesheet"
@@ -23,7 +25,11 @@
 </svelte:head>
 
 <Header />
-<slot />
+<main>
+  <div class='container'>
+    <slot />
+  </div>
+</main>
 <Footer />
 
 <style>
@@ -136,14 +142,6 @@
 
   .card-footer {
     padding-top: 0;
-  }
-
-  /* about me page */
-  .headshot {
-    border: 4px solid #fbc02d;
-    height: 350px;
-    width: 350px;
-    margin-bottom: 2em;
   }
 
   /* gallery */

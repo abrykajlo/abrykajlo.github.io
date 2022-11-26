@@ -4,6 +4,7 @@ export const prerender = true;
 
 export const load: LayoutLoad = () => {
     return {
+        title: 'Up And Adam',
         header_items: [
             {
                 name: 'home',
