@@ -1,10 +1,3 @@
-<script type="ts" context="module">
-  export type HeaderItem = {
-    name: string;
-    path: string;
-  };
-</script>
-
 <script lang="ts">
   import { page } from '$app/stores';
 
@@ -29,9 +22,9 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
       <ul class="navbar-nav mt-2 mt-lg-0">
-        {#each $page.data.header_items as { name, path }}
-          <li class="nav-item{name === $page.data.active_item ? ' active' : ''}">
-            <a class="nav-link" href={path}>{name.toUpperCase()}</a>
+        {#each $page.data.menu_items as { item, path }}
+          <li class="nav-item{item === $page.data.active_item ? ' active' : ''}">
+            <a class="nav-link" href={path}>{item.toUpperCase()}</a>
           </li>
         {/each}
       </ul>

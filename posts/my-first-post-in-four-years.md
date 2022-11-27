@@ -1,6 +1,8 @@
 +++
-title = "My First Post In Four Years"
-date = 2022-06-14
+title = 'My First Post In Four Years'
+slug = 'my-first-post-in-four-years'
+type = 'post'
+date = '2022-06-14'
 +++
 
 ## Departure from Relic

@@ -1,0 +1,17 @@
+title = 'Start of a Gallery'
+type = 'art'
+date = '2017-12-21'
+images = [
+    'business_cat',
+    'face',
+    'head',
+    'lola',
+    'smoke',
+    'self_portrait',
+    'karl',
+    'happy_bathtub',
+]
+
+[taxonomies]
+tags = ['drawing']
+category = ['art']

@@ -21,9 +21,9 @@
     </div>
     <div class="footer-left">
       <p class="footer-links">
-        {#each $page.data.header_items as { name, path }, i}
+        {#each $page.data.menu_items as { item, path }, i}
           {i !== 0 ? ' | ' : ''}
-          <a href={path}>{name.toUpperCase()}</a>
+          <a href={path}>{item.toUpperCase()}</a>
         {/each}
       </p>
       <p>Adam Brykajlo &copy; 2017-{new Date().getFullYear()}</p>
