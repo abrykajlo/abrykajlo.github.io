@@ -71,6 +71,8 @@ function getPosts(): Post[] {
         parsed.date = new Date(parsed.date)
         parsed.path = strftime(`/blog/%Y/%m/%d/${post.split('.')[0]}`, parsed.date)
         return parsed
+    }).sort((post1, post2) => {
+        return post2.date.getTime() - post1.date.getTime()
     })
 }
 
