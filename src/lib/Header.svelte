@@ -1,64 +1,28 @@
 <script lang="ts">
   import { page } from '$app/stores';
-
-  import Fa from 'svelte-fa';
-  import { faBars } from '@fortawesome/free-solid-svg-icons'
 </script>
 
-<header class="navbar navbar-inverse navbar-expand-md">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <img alt="logo" class="rounded-circle" height="80px" src="/images/logo.svg" />
-    </a>
-    <h1>Adam Brykajlo</h1>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarToggler"
-    >
-      <Fa icon={faBars} size='lg' />
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
-      <ul class="navbar-nav mt-2 mt-lg-0">
-        {#each $page.data.menu_items as { item, path }}
-          <li class="nav-item{item === $page.data.active_item ? ' active' : ''}">
-            <a class="nav-link" href={path}>{item.toUpperCase()}</a>
-          </li>
-        {/each}
-      </ul>
+<header>
+  <div class="container flex items-center justify-between py-6 px-4 content-center mx-auto">
+    <div class="flex items-center gap-10">
+      <a href="/">
+        <img class="rounded-full h-20 w-20" src="/images/logo.svg" alt="logo" />
+      </a>
+      <h1 class="text-5xl">Adam Brykajlo</h1>
     </div>
+    
+    <ul class="flex gap-4 text-xl">
+      {#each $page.data.menu_items as { item, path }}
+      <li class={item === $page.data.active_item ? ' underline decoration-[#fbc02d]' : ''}>
+        <a href={path}>{item.toUpperCase()}</a>
+      </li>
+      {/each}
+    </ul>
   </div>
 </header>
 
 <style>
   h1 {
     white-space: nowrap;
-  }
-
-  .navbar {
-    margin-bottom: 30px;
-  }
-
-  .nav-item {
-    font-size: 1.25em;
-  }
-
-  .nav-item.active {
-    text-decoration-line: underline;
-    text-decoration-color: #fbc02d;
-  }
-
-  .nav-link {
-    color: white;
-  }
-
-  .nav-link:hover {
-    color: #6d6d6d;
-  }
-
-  .navbar-toggler {
-    color: white;
   }
 </style>
