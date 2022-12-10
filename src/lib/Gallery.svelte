@@ -1,19 +1,10 @@
 <script lang="ts">
   import baguetteBox from 'baguettebox.js';
-  import { page } from '$app/stores';
-  import type { Image } from './data';
+  import type { Image } from './server/data';
   import { onMount } from 'svelte';
 
   export let id: number = 0;
-  export let imageNames: string[] | undefined = undefined;
-
-  const gallery: Image[] = $page.data.gallery;
-
-  const images: Image[] =
-    imageNames?.map((name) => {
-      const image = gallery.find((image) => image.name == name);
-      return image || { name: '', alt: '', thumbnail: '', path: '' };
-    }) || gallery;
+  export let images: Image[];
 
   let sizeClass = '';
   if (images.length >= 9) {

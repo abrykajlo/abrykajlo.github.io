@@ -1,5 +1,6 @@
 <script lang='ts'>
     import Gallery from "$lib/Gallery.svelte";
+    import { page } from "$app/stores";
 </script>
 
-<Gallery />
+<Gallery images={$page.data.gallery} />

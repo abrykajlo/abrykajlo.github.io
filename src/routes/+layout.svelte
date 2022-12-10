@@ -8,13 +8,6 @@
 </script>
 <svelte:head>
   <title>{$page.data.title}</title>
-  <!-- BOOTSTRAP CSS -->
-  <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
-    crossorigin="anonymous"
-  />
   <!-- BAGUETTEBOX CSS -->
   <link
     rel="stylesheet"
@@ -44,7 +37,7 @@
     padding-bottom: 0.2em;
   }
 
-  hr {
+  :global(hr) {
     border-color: #fbc02d;
   }
 
@@ -64,25 +57,5 @@
 
   #canvas {
     display: inline;
-  }
-
-  /* Highlight */
-  figure.highlight {
-    background-color: #424242;
-    padding: 1em;
-  }
-
-  .highlight > * {
-    color: #fbc02d;
-  }
-
-  .kt,
-  .p,
-  .o {
-    color: #009688;
-  }
-
-  .n {
-    color: #8bc34a;
   }
 </style>

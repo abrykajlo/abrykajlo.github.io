@@ -1,9 +1,9 @@
 <script lang="ts">
   import Gallery from '$lib/Gallery.svelte';
   import strftime from 'strftime';
-  import type { Post } from '$lib/data';
+  import type { PostData } from '$lib/types';
 
-  export let data: Post;
+  export let data: PostData;
 
   const { date, path, title, description, type, id, images, taxonomies } = data;
 </script>
@@ -21,14 +21,14 @@
     </div>
   </div>
   <div class="card-body">
-    {#if type === 'post'}
+    {#if type === 'post' && description}
       <div class="card-text">
         {description}
       </div>
       <a href={path} class="card-link btn btn-primary">Read More</a>
-    {:else if type === 'art'}
+    {:else if type === 'art' && images}
       <div class="card-text">
-        <Gallery {id} imageNames={images} />
+        <Gallery {id} {images} />
       </div>
       <a href={path} class="card-link btn btn-primary">Leave A Comment</a>
     {/if}

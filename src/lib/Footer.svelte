@@ -1,10 +1,3 @@
-<script lang="ts" context="module">
-  export type Socials = {
-    linkedin: string;
-    github: string;
-  };
-</script>
-
 <script lang="ts">
   import { page } from '$app/stores';
   import Fa from 'svelte-fa';

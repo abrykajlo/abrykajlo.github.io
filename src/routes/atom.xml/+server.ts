@@ -1,7 +1,7 @@
 import type { RequestHandler } from "./$types";
 
 import RSS from 'rss'
-import data from "$lib/data";
+import data from "$lib/server/data";
 
 export const prerender = true
 

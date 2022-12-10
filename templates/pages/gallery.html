@@ -1,7 +1,0 @@
-{% import "macros/art.html" as art %}
-
-{% extends "pages/post.html" %}
-
-{% block content %}
-{{ art::gallery(id="post", names=page.extra.images) }}
-{% endblock content %}
