@@ -17,6 +17,3 @@
 </div>
 
 {@html `<script async src="/js/${js}"></script>`}
-
-<style>
-</style>

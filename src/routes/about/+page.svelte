@@ -1,12 +1,5 @@
-<div class="row">
-  <div class="col-12 col-lg-5 order-1 order-lg-2 d-flex">
-    <img
-      alt="profile pic"
-      class="headshot rounded-circle mr-auto ml-auto"
-      src="/images/headshot.jpg"
-    />
-  </div>
-  <div class="col-12 col-lg-7 order-2 order-lg-1">
+<div class="flex">
+  <div>
     <p>
       When I was in high school I had a dilemma. Do I pursue the visual arts and be a creative in
       the game or VFX industry? Or do I double down on math and science to become a knowledge worker
@@ -28,13 +21,11 @@
       skills in mathematics, science and programming.
     </p>
   </div>
+  <img class="w-[350px] h-[350px] rounded-full border-yellow border-4 mb-8 ml-8" alt="profile pic" src="/images/headshot.jpg" />
 </div>
 
 <style>
-  .headshot {
-    border: 4px solid #fbc02d;
-    height: 350px;
-    width: 350px;
-    margin-bottom: 2em;
+  p {
+    @apply text-lg mb-6;
   }
 </style>

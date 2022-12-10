@@ -1,6 +1,6 @@
 <script lang="ts">
   import baguetteBox from 'baguettebox.js';
-  import type { Image } from './server/data';
+  import type { Image } from '$lib/types';
   import { onMount } from 'svelte';
 
   export let id: number = 0;
@@ -25,42 +25,9 @@
 {:else if images.length > 1}
   <div class="gallery-{id} {sizeClass}">
     {#each images as image, i}
-      <div class="item-{i} thumb">
-        <a href={image.path}>
-          <img src={image.thumbnail} alt={image.alt} />
-        </a>
-      </div>
+      <a href={image.path}>
+        <img src={image.thumbnail} alt={image.alt} />
+      </a>
     {/each}
   </div>
 {/if}
-
-<style>
-  .make-gallery-grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 2%;
-    max-width: 100%;
-  }
-
-  .make-gallery-grid-2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
-    grid-gap: 2%;
-    max-width: 100%;
-  }
-
-  .make-gallery-grid-1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 600px);
-    grid-gap: 2%;
-    max-width: 100%;
-  }
-
-  .thumb img {
-    max-width: 100%;
-  }
-
-  img.gallery {
-    max-width: 100%;
-  }
-</style>

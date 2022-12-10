@@ -7,6 +7,7 @@
   import '../app.css';
   import '@fontsource/roboto/100.css';
 </script>
+
 <svelte:head>
   <title>{$page.data.title}</title>
   <!-- BAGUETTEBOX CSS -->
@@ -19,44 +20,17 @@
 </svelte:head>
 
 <Header />
-<main>
-  <div class='container'>
-    <slot />
-  </div>
+<main class="container mx-auto px-40">
+  <slot />
 </main>
 <Footer />
 
 <style>
   :global(body) {
-    background-color: #303030;
-    color: white;
-    font-family: 'Roboto';
+    @apply bg-gray font-roboto text-white;
   }
 
-  h2 {
-    padding-top: 0.8em;
-    padding-bottom: 0.2em;
-  }
-
-  :global(hr) {
-    border-color: #fbc02d;
-  }
-
-  a {
-    color: #fbc02d;
-  }
-
-  a:hover {
-    color: #6d6d6d;
-  }
-
-  /* Canvas */
-  #canvas-container {
-    width: 100%;
-    text-align: center;
-  }
-
-  #canvas {
-    display: inline;
+  :global(a) {
+    @apply text-yellow hover:text-light-gray;
   }
 </style>
