@@ -1,21 +1,21 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex';
-import toml from 'toml'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
+	extensions: ['.svelte', '.svx'],
 	preprocess: [
 		preprocess({
 			postcss: true,
 		}), 
 		mdsvex({
-			frontmatter: {
-				marker: '+',
-				parse: toml.parse,
-			},
+			layout: {
+				post: './src/lib/layouts/Post.svelte',
+				art: './src/lib/layouts/Art.svelte',
+			}
 		}),
 	],
 
@@ -23,7 +23,6 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: null,
 		})
 	}
 };

@@ -1,7 +1,7 @@
-import type { PageServerLoad } from "./$types";
-import data from '$lib/server/data'
+import type { PageLoad } from "./$types";
+import data from '$lib/data'
 
-export const load: PageServerLoad = () => {
+export const load: PageLoad = () => {
     return {
         title: 'Gallery of Adam Brykajlo',
         active_item: 'gallery',

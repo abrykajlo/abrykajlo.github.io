@@ -1,12 +1,13 @@
-+++
-title = 'Life Update And Some Rust'
-slug = 'life-update-and-some-rust'
-type = 'post'
-date = '2018-11-11'
+---
+title: Life Update And Some Rust
+slug: life-update-and-some-rust
+layout: post
+date: 2018-11-11
 
-[taxonomies]
-category = ['personal']
-+++
+taxonomies:
+  category:
+    - personal
+---
 
 Writing code and writing words about said code is not my forte. While the coding continued on the WASM renderer I was working on, the blog posts stopped. Life gets busy and habits die hard. Well a lot has happened since then and while I continued the coding portion up until mid-August I have stopped since then. I got to the point of having a full Shader and ShaderProgram class implementation wrapping the OpenGL code. Alas you work on projects to figure out what sticks and this has not stuck.
 

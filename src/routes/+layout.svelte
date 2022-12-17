@@ -27,7 +27,7 @@
 
 <style>
   :global(body) {
-    @apply bg-gray font-roboto text-white;
+    @apply bg-gray font-roboto text-white min-h-screen;
   }
 
   :global(a) {

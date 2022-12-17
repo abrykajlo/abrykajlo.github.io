@@ -1,0 +1,45 @@
+images:
+  - name: business_cat
+    path: /images/gallery/business_cat.jpg
+    thumbnail: /images/gallery/thumbnails/business_cat.jpg
+    alt: This cat means business
+
+  - name: face
+    path: /images/gallery/face.jpg
+    thumbnail: /images/gallery/thumbnails/face.jpg
+    alt: A picture of a face
+
+  - name: groovy
+    path: /images/gallery/Groovy.jpg
+    thumbnail: /images/gallery/thumbnails/Groovy.jpg
+    alt: Ash Vs Evil Dead
+
+  - name: happy_bathtub
+    path: /images/gallery/happy_bathtub.jpg
+    thumbnail: /images/gallery/thumbnails/happy_bathtub.jpg
+    alt: A happy bathtub
+
+  - name: head
+    path: /images/gallery/head.jpg
+    thumbnail: /images/gallery/thumbnails/head.jpg
+    alt: A head of its time
+
+  - name: karl
+    path: /images/gallery/karl.jpg
+    thumbnail: /images/gallery/thumbnails/karl.jpg
+    alt: A drawing of one of my closest friends
+
+  - name: lola
+    path: /images/gallery/lola.jpg
+    thumbnail: /images/gallery/thumbnails/lola.jpg
+    alt: Drawing of my older sisters dog
+
+  - name: self_portrait
+    path: /images/gallery/self_portrait_1.jpg
+    thumbnail: /images/gallery/thumbnails/self_portrait_1.jpg
+    alt: Self Portrait
+
+  - name: smoke
+    path: /images/gallery/smoke.jpg
+    thumbnail: /images/gallery/thumbnails/smoke.jpg
+    alt: Smoke

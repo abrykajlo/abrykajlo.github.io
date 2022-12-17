@@ -1,0 +1,14 @@
+---
+title: Groovy
+slug: groovy
+layout: art
+date: 2018-01-04
+images:
+  - groovy
+
+taxonomies:
+  tags:
+    - drawing
+  category:
+    - art
+---

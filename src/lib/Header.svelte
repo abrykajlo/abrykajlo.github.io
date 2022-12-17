@@ -12,9 +12,9 @@
     </div>
     
     <ul class="flex gap-4 text-xl">
-      {#each $page.data.menu_items as { item, path }}
-      <li class={item === $page.data.active_item ? ' underline decoration-yellow' : ''}>
-        <a href={path}>{item.toUpperCase()}</a>
+      {#each $page.data.menu_items as { name, path }}
+      <li class={name === $page.data.active_item ? ' underline decoration-yellow' : ''}>
+        <a href={path}>{name.toUpperCase()}</a>
       </li>
       {/each}
     </ul>

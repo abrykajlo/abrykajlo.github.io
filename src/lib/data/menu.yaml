@@ -1,0 +1,9 @@
+items:
+  - name: home 
+    path: /
+
+  - name: gallery
+    path: /gallery
+  
+  - name: about
+    path: /about
