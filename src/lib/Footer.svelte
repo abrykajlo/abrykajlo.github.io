@@ -5,7 +5,7 @@
   import { faGithubAlt, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 </script>
 
-<footer class="bg-dark-gray pt-8 pb-4 bottom-0 absolute">
+<footer class="pt-32 pb-4">
   <div class="container mx-auto">
     <div class="flex gap-4 mb-4">
       <a href="https://linkedin.com/in/{$page.data.me.linkedin}"><Fa icon={faLinkedin} size='1.5x' /></a>

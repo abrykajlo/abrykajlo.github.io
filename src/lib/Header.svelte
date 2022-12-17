@@ -2,7 +2,7 @@
   import { page } from '$app/stores';
 </script>
 
-<header class="pb-8">
+<header class="bg-gray">
   <div class="container flex items-center justify-between py-6 px-4 content-center mx-auto">
     <div class="flex items-center gap-10">
       <a href="/">

@@ -20,14 +20,16 @@
 </svelte:head>
 
 <Header />
-<main class="container mx-auto px-40">
-  <slot />
+<main class="bg-gray py-10">
+  <div class="container mx-auto px-40">
+    <slot />
+  </div>
 </main>
 <Footer />
 
 <style>
   :global(body) {
-    @apply bg-gray font-roboto text-white min-h-screen;
+    @apply bg-dark-gray font-roboto text-white min-h-screen;
   }
 
   :global(a) {

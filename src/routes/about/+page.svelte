@@ -26,6 +26,6 @@
 
 <style>
   p {
-    @apply text-lg mb-6;
+    @apply  text-lg mt-6 first-of-type:mt-0;
   }
 </style>
