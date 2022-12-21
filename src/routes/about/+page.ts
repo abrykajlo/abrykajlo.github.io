@@ -1,8 +1,10 @@
 import type { PageLoad } from "./$types";
 
+import { MenuItem } from "$lib/types";
+
 export const load: PageLoad = () => {
     return {
         title: 'About Me',
-        active_item: 'about',
+        activeMenuItem: MenuItem.About,
     }
 }

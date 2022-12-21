@@ -2,17 +2,15 @@
 title: Start of a Gallery
 layout: art
 date: 2017-12-21
-slug: start-of-a-gallery
 images: 
   - business_cat
   - face
   - head
   - lola
   - smoke
-  - self_portrait
+  - self_portrait_1
   - karl
   - happy_bathtub
-
 taxonomies:
   tags:
     - drawing

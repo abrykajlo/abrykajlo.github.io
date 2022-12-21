@@ -1,5 +1,8 @@
 <script lang="ts">
-  import { page } from '$app/stores';
+  import { menu, menuItemPathMap } from '$lib/data/menu';
+  import type { MenuItem } from '$lib/types';
+
+  export let activeMenuItem: MenuItem;
 </script>
 
 <header class="bg-gray">
@@ -10,12 +13,12 @@
       </a>
       <h1 class="text-5xl whitespace-nowrap">Adam Brykajlo</h1>
     </div>
-    
+
     <ul class="flex gap-4 text-xl">
-      {#each $page.data.menu_items as { name, path }}
-      <li class={name === $page.data.active_item ? ' underline decoration-yellow' : ''}>
-        <a href={path}>{name.toUpperCase()}</a>
-      </li>
+      {#each menu as item}
+        <li class={item === activeMenuItem ? ' underline decoration-yellow' : ''}>
+          <a href={menuItemPathMap[item]}>{item.toUpperCase()}</a>
+        </li>
       {/each}
     </ul>
   </div>

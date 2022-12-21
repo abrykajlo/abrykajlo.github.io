@@ -1,5 +1,7 @@
-<script>
-  import { page } from '$app/stores';
+<script lang="ts">
+  import type { PageData } from "./$types";
+
+  export let data: PageData;
 </script>
 
-<svelte:component this={$page.data.default} />
+<svelte:component this={data.default} />

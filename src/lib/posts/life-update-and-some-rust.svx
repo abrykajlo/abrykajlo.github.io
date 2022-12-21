@@ -1,9 +1,7 @@
 ---
 title: Life Update And Some Rust
-slug: life-update-and-some-rust
 layout: post
 date: 2018-11-11
-
 taxonomies:
   category:
     - personal

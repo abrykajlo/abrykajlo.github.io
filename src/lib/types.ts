@@ -1,47 +1,63 @@
+export type Socials = {
+    email: string
+    author: string
+    linkedin: string
+    github: string
+}
+
 export type Config = {
     title: string
     description: string
-    me: {
-        email: string
-        author: string
-        linkedin: string
-        github: string
-    }
+    me: Socials
 }
 
-export type MenuItem = {
-    name: string
-    path: string
+export enum MenuItem {
+    Home = 'home',
+    Gallery = 'gallery',
+    About = 'about',
 }
 
-export type Image = {
-    name: string
-    path: string
-    thumbnail: string
-    alt: string
+type MenuItemPathMap = {
+    [key in MenuItem]: string
 }
 
-export type PostData = {
+export type MenuData = {
+    menu: MenuItem[]
+    menu_item_path_map: MenuItemPathMap
+}
+
+type ImageAltMap = {
+    [key: string]: string
+}
+
+export type ImageData = {
+    gallery: string[]
+    image_alt_map: ImageAltMap
+}
+
+type CommonMetaData = {
     title: string
-    date: Date
-}
-
-export type ArtData = PostData & {
-    images: Image[]
-}
-
-export type PostCardData = {
-    title: string
-    date: string
     slug: string
-    type: string
-    description: string
+    date: string
     taxonomies: {
         tags: string[]
         categories: string[]
     }
 }
 
-export type ArtPostCardData = PostCardData & {
-    images: Image[]
+export enum Layout {
+    Art = 'art',
+    Post = 'post',
 }
+
+export type PostMetaData = CommonMetaData & {
+    layout: Layout.Post
+    description: string
+}
+
+export type ArtMetaData = CommonMetaData & {
+    layout: Layout.Art
+    images: string[]
+}
+
+export type MetaData = PostMetaData | ArtMetaData

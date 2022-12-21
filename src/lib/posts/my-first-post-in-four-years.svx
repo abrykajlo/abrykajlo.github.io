@@ -1,6 +1,5 @@
 ---
 title: My First Post In Four Years
-slug: my-first-post-in-four-years
 layout: post
 date: 2022-06-14
 ---

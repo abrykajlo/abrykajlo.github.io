@@ -1,14 +1,14 @@
 <script>
-  import strftime from 'strftime'
+  import strftime from 'strftime';
+  import { config } from '$lib/data/config';
 
-  export let title;
-  export let date;
-  export let author;
+  export let title; // string
+  export let date; // string
 </script>
 
-<h1>{title}</h1>
+<h1 class="text-xl">{title}</h1>
 <h3>{strftime('%B %e, %Y', new Date(date))}</h3>
-<h5>by {author}</h5>
+<h5>by {config.me.author}</h5>
 <hr />
 
 <slot />

@@ -1,7 +1,8 @@
 import type { RequestHandler } from "./$types";
 
 import RSS from 'rss'
-import data from "$lib/data";
+import { metadatas } from "$lib/data/posts";
+import type { PostMetaData } from "$lib/types";
 
 export const prerender = true
 
@@ -12,16 +13,16 @@ export const GET: RequestHandler = ({ setHeaders }) => {
         site_url: `${website}`,
         feed_url: `${website}/atom.xml`
     })
-    const posts = data.getPosts()
-    posts.forEach((post) => {
+    metadatas.forEach((metadata) => {
         feed.item({
-            title: post.title,
-            url: `${website}${post.path}`,
-            date: post.date,
-            description: post.description ?? '',
+            title: metadata.title,
+            url: `${website}/blog/${metadata.slug}`,
+            date: metadata.date,
+            description: (metadata as PostMetaData).description ?? '',
             author: 'Adam Brykajlo',
-            categories: post.taxonomies?.categories,
+            categories: metadata.taxonomies?.categories,
         })
+
     })
     setHeaders({
         'Content-Type': 'application/xml'
