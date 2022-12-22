@@ -21,7 +21,7 @@
 </main>
 <Footer />
 
-<style>
+<style lang="postcss">
   :global(html) {
     @apply overflow-y-scroll;
   }
@@ -32,5 +32,13 @@
 
   :global(a) {
     @apply text-yellow hover:text-light-gray;
+  }
+
+  :global(p) {
+    @apply text-lg;
+  }
+
+  :global(::selection) {
+    @apply bg-yellow text-dark-gray;
   }
 </style>

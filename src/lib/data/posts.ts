@@ -1,8 +1,7 @@
 import type { MetaData } from "$lib/types"
-import type { SvelteComponent } from "svelte"
 
 type SVXImport = {
-    default: SvelteComponent
+    default: ConstructorOfATypedSvelteComponent
     metadata: MetaData
 }
 

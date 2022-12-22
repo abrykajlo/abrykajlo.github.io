@@ -11,18 +11,18 @@
 
 <div>
   <!-- header -->
-  <div class="flex gap-x-5 bg-dark-gray rounded-tl-full rounded-tr-full items-center">
+  <div class="flex gap-x-5 bg-dark-gray rounded-tl-full rounded-tr-full items-center border-b-2 border-yellow">
     <div
       class="bg-yellow text-dark-gray font-black rounded-tl-full rounded-br-full h-fit w-fit px-5 py-1"
     >
       {strftime('%b %d %Y', new Date(date)).toUpperCase()}
     </div>
     <a href="/blog/{slug}">
-      <h2 class="underline text-lg">{title}</h2>
+      <h2 class="text-lg font-bold">{title}</h2>
     </a>
   </div>
   <!-- content -->
-  <div class="bg-dark-gray p-8 rounded-b-xl ">
+  <div class="bg-dark-gray p-8 pt-5 rounded-b-xl ">
     {#if layout === Layout.Post}
       <div>{data.description}</div>
     {:else if layout === Layout.Art}

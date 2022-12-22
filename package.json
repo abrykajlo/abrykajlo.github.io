@@ -42,9 +42,12 @@
 		"@types/strftime": "^0.9.4",
 		"autoprefixer": "^10.4.13",
 		"baguettebox.js": "^1.11.1",
+		"prism-themes": "^1.9.0",
 		"strftime": "^0.10.1",
 		"svelte-fa": "^3.0.3",
 		"tailwindcss": "^3.2.4",
+		"unified": "^10.1.2",
+		"unist-util-visit": "^4.1.1",
 		"yaml": "^2.1.3"
 	}
 }

@@ -24,8 +24,8 @@
   <img class="w-[350px] h-[350px] rounded-full border-yellow border-4 mb-8 ml-8" alt="profile pic" src="/images/headshot.jpg" />
 </div>
 
-<style>
+<style lang="postcss">
   p {
-    @apply  text-lg mt-6 first-of-type:mt-0;
+    @apply  mt-6 first-of-type:mt-0;
   }
 </style>

@@ -23,6 +23,6 @@
         <a href={menuItemPathMap[item]}>{item.toUpperCase()}</a>
       {/each}
     </div>
-    <p>Adam Brykajlo &copy; 2017-{new Date().getFullYear()}</p>
+    <p>{config.me.author} &copy; 2017-{new Date().getFullYear()}</p>
   </div>
 </footer>
