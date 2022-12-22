@@ -1,0 +1,1 @@
+import{M as e}from"./types-9142bdcd.js";const t=()=>({title:"About Me",activeMenuItem:e.About}),r=Object.freeze(Object.defineProperty({__proto__:null,load:t},Symbol.toStringTag,{value:"Module"}));export{r as _,t as l};
