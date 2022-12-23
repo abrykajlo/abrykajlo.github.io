@@ -321,13 +321,13 @@
       "src/routes/gallery/+page.svelte"
     ]
   },
-  "Gallery.css": {
-    "file": "_app/immutable/assets/Gallery-47f67d84.css",
-    "src": "Gallery.css"
-  },
   "src/routes/about/+page.css": {
     "file": "_app/immutable/assets/_page-453d1449.css",
     "src": "src/routes/about/+page.css"
+  },
+  "Gallery.css": {
+    "file": "_app/immutable/assets/Gallery-47f67d84.css",
+    "src": "Gallery.css"
   },
   "posts.css": {
     "file": "_app/immutable/assets/posts-08e5ae82.css",
