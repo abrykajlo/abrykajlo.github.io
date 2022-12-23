@@ -1,0 +1,1 @@
+import{a as o}from"./posts-637bd281.js";import{M as a}from"./types-9142bdcd.js";const r=async({params:e})=>{const t=o[e.slug];return{title:t.metadata.title,activeMenuItem:a.Home,post:t}},n=Object.freeze(Object.defineProperty({__proto__:null,load:r},Symbol.toStringTag,{value:"Module"}));export{n as _,r as l};
