@@ -1,4 +1,4 @@
-import{S as P,i as W,s as j,k as h,q as b,a as _,l as d,m as p,r as k,h as m,c as x,n as i,H as q,b as B,F as t,B as D}from"../../../chunks/index-24cc77ce.js";function H(A){let e,a,s,v,w,o,u,y,r,f,I,n,O;return{c(){e=h("div"),a=h("div"),s=h("p"),v=b(`When I was in high school I had a dilemma. Do I pursue the visual arts and be a creative in
+import{S as P,i as W,s as j,k as h,q as b,a as _,l as d,m as p,r as k,h as m,c as x,n as i,H as q,b as B,F as t,B as D}from"../../../chunks/index-c69191c7.js";function H(A){let e,a,s,v,w,o,u,y,r,f,I,n,O;return{c(){e=h("div"),a=h("div"),s=h("p"),v=b(`When I was in high school I had a dilemma. Do I pursue the visual arts and be a creative in
       the game or VFX industry? Or do I double down on math and science to become a knowledge worker
       in an engineering field? I chose the latter, so off I went to Queen's University in Kingston,
       Ontario where I did 5 years of applied mathematics in mechanical engineering. Following that
