@@ -15,7 +15,7 @@
 
 <Header activeMenuItem={$page.data.activeMenuItem} />
 <main class="bg-gray py-10">
-  <div class="container mx-auto px-40">
+  <div class="md:container mx-auto md:px-40">
     <slot />
   </div>
 </main>
