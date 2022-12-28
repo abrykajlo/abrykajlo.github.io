@@ -17,7 +17,7 @@
     >
       {strftime('%b %d %Y', new Date(date)).toUpperCase()}
     </div>
-    <a href="/blog/{slug}">
+    <a href="/blog/{slug}/">
       <h2 class="text-lg font-bold">{title}</h2>
     </a>
   </div>

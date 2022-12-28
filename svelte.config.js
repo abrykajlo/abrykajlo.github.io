@@ -29,7 +29,14 @@ const config = {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-		})
+		}),
+		prerender: {
+			entries: [
+				'*',
+				'/blog/little-red-box/js/lrb.js',
+				'/blog/little-red-box/js/lrb.wasm',
+			],
+		},
 	}
 };
 
