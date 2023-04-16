@@ -1,0 +1,28 @@
+languageCode = "en"
+languageName = "English"
+displayName = "EN"
+isoCode = "en"
+weight = 1
+rtl = false
+
+title = "Adam Brykajlo"
+# logo = "img/logo.svg"
+description = "My awesome website"
+copyright = "Adam Brykajlo &copy; 2017-2023"
+
+dateFormat = "2 January 2006"
+
+[author]
+name = "Adam Brykajlo"
+image = "img/headshot.jpg"
+headline = "I'm only human"
+bio = "A little bit about you"
+links = [
+    { email = "mailto:adam.brykajlo@gmail.com" },
+    #     { discord = "https://discord.gg/invitecode" },
+    { github = "https://github.com/abrykajlo" },
+    #     { instagram = "https://instagram.com/username" },
+    { linkedin = "https://linkedin.com/in/abrykajlo" },
+    #     { mastodon = "https://mastodon.instance/@username" },
+    #     { twitter = "https://twitter.com/username" },
+]
