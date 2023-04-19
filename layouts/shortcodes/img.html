@@ -1,0 +1,2 @@
+{{ $img := resources.GetMatch (.Get "src") }}
+<img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" class="{{ .Get `class` }}" />

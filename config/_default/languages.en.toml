@@ -6,7 +6,7 @@ weight = 1
 rtl = false
 
 title = "Adam Brykajlo"
-# logo = "img/logo.svg"
+logo = "img/logo.svg"
 description = "My awesome website"
 copyright = "Adam Brykajlo &copy; 2017-2023"
 

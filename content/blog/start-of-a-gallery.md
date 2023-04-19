@@ -1,5 +1,6 @@
 ---
 title: Start of a Gallery
+draft: true
 layout: art
 date: 2017-12-21
 images: 

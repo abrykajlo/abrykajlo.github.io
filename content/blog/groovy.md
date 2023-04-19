@@ -1,5 +1,6 @@
 ---
 title: Groovy
+draft: true
 layout: art
 date: 2018-01-04
 images:
@@ -10,5 +11,3 @@ tags:
 category:
   - art
 ---
-
-{{< gallery images=.images >}}

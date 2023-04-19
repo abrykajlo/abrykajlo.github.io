@@ -1,6 +1,11 @@
 ---
 title: About Me
-menu: about
+draft: true
+showAuthor: false
+showDate: false
+showPagination: false
+showWordCount: false
+showReadingTime: false
 ---
 
 <div class="flex">
@@ -26,5 +31,5 @@ menu: about
       skills in mathematics, science and programming.
     </p>
   </div>
-  <img class="w-[350px] h-[350px] rounded-full border-yellow border-4 mb-8 ml-8" src="img/headshot.jpg"  />
+  {{< img class="w-[350px] h-[350px] rounded-full border-yellow border-4 mb-8 ml-8" src="img/headshot.jpg" >}}
 </div>

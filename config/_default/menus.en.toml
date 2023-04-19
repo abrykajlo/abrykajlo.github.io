@@ -3,27 +3,27 @@ name = "Blog"
 pageRef = "blog"
 weight = 10
 
-[[main]]
-name = "About"
-pageRef = "about"
-weight = 20
+# [[main]]
+# name = "About"
+# pageRef = "about"
+# weight = 20
 
-[[main]]
-name = "Gallery"
-pageRef = "gallery"
-weight = 30
+# [[main]]
+# name = "Gallery"
+# pageRef = "gallery"
+# weight = 30
 
 [[footer]]
 name = "Blog"
 pageRef = "blog"
 weight = 10
 
-[[footer]]
-name = "About"
-pageRef = "about"
-weight = 20
+# [[footer]]
+# name = "About"
+# pageRef = "about"
+# weight = 20
 
-[[footer]]
-name = "Gallery"
-pageRef = "gallery"
-weight = 30
+# [[footer]]
+# name = "Gallery"
+# pageRef = "gallery"
+# weight = 30
