@@ -1,13 +1,13 @@
 ---
 title: Groovy
-draft: true
-layout: art
+layout: simple
 date: 2018-01-04
-images:
-  - Groovy
-
 tags:
   - drawing
 category:
   - art
 ---
+
+{{< gallery >}}
+  {{< img src="img/gallery/Groovy.jpg" >}}
+{{< /gallery >}}

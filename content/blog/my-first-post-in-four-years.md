@@ -1,6 +1,5 @@
 ---
 title: My First Post In Four Years
-layout: post
 date: 2022-06-14
 ---
 

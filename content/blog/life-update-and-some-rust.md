@@ -1,8 +1,6 @@
 ---
 title: Life Update And Some Rust
-layout: post
 date: 2018-11-11
-description: Hello
 taxonomies:
   category:
     - personal

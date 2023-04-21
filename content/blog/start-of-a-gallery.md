@@ -1,19 +1,20 @@
 ---
 title: Start of a Gallery
-draft: true
-layout: art
+layout: simple
 date: 2017-12-21
-images: 
-  - business_cat
-  - face
-  - head
-  - lola
-  - smoke
-  - self_portrait_1
-  - karl
-  - happy_bathtub
 tags:
   - drawing
 category:
   - art
 ---
+
+{{< gallery >}}
+  {{< img src="img/gallery/business_cat.jpg" class="grid-w33" >}}
+  {{< img src="img/gallery/face.jpg" class="grid-w33" >}}
+  {{< img src="img/gallery/head.jpg" class="grid-w33" >}}
+  {{< img src="img/gallery/lola.jpg" class="grid-w33" >}}
+  {{< img src="img/gallery/smoke.jpg" class="grid-w33" >}}
+  {{< img src="img/gallery/self_portrait_1.jpg" class="grid-w33" >}}
+  {{< img src="img/gallery/karl.jpg" class="grid-w33" >}}
+  {{< img src="img/gallery/happy_bathtub.jpg" class="grid-w33" >}}
+{{< /gallery >}}

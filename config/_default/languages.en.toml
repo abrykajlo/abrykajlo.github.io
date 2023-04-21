@@ -15,8 +15,8 @@ dateFormat = "2 January 2006"
 [author]
 name = "Adam Brykajlo"
 image = "img/headshot.jpg"
-headline = "I'm only human"
-bio = "A little bit about you"
+headline = "Software Developer working in the Games Industry"
+bio = ""
 links = [
     { email = "mailto:adam.brykajlo@gmail.com" },
     #     { discord = "https://discord.gg/invitecode" },

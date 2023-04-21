@@ -1,6 +1,5 @@
 ---
 title: Little Red Box
-layout: post
 date: 2018-06-29
 taxonomies:
   category:
