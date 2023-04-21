@@ -1,6 +1,0 @@
-menu: [home, gallery, about]
-
-menu_item_path_map:
-  home: /
-  gallery: /gallery
-  about: /about

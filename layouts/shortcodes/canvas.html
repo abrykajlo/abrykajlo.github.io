@@ -1,0 +1,16 @@
+<div class="flex justify-center">
+  <canvas id="canvas" />
+</div>
+
+<script>
+  var Module = {
+    canvas: function() {
+      var canvas = document.getElementById('canvas');
+      return canvas;
+    }(),
+    locateFile: function(file) {
+      return "{{.Get `folder` }}" + `/${file}`;
+    }
+  };
+</script>
+<script async src="{{.Get `folder`}}/{{.Get `file` }}"></script>
