@@ -1,2 +1,0 @@
-var a={title:"Up And Adam",description:`A blog about my adventures in drawing and digital art and possibly a foray into webassembly and webgl programming in C++.
-`,me:{email:"adam.brykajlo@gmail.com",author:"Adam Brykajlo",linkedin:"abrykajlo",github:"abrykajlo"}};const i=a;export{i as c};

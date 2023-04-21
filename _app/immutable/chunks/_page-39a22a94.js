@@ -1,1 +1,0 @@
-import{M as e}from"./types-9142bdcd.js";const t=()=>({title:"Gallery of Adam Brykajlo",activeMenuItem:e.Gallery}),l=Object.freeze(Object.defineProperty({__proto__:null,load:t},Symbol.toStringTag,{value:"Module"}));export{l as _,t as l};

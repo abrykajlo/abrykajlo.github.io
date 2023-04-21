@@ -1,1 +1,0 @@
-import{c as t}from"./config-15d584ed.js";const e=!0,o="always",r=()=>({title:t.title}),l=Object.freeze(Object.defineProperty({__proto__:null,prerender:e,trailingSlash:o,load:r},Symbol.toStringTag,{value:"Module"}));export{l as _,r as l,e as p,o as t};
