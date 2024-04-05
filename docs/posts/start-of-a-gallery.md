@@ -6,6 +6,8 @@ categories:
   - art
 ---
 
+<!-- more -->
+
 {{< gallery >}}
   {{< img src="img/gallery/business_cat.jpg" class="grid-w33" >}}
   {{< img src="img/gallery/face.jpg" class="grid-w33" >}}

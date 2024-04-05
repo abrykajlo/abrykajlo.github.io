@@ -6,6 +6,8 @@ categories:
   - art
 ---
 
+<!-- more -->
+
 {{< gallery >}}
   {{< img src="img/gallery/Groovy.jpg" >}}
 {{< /gallery >}}

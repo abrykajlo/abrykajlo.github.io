@@ -1,7 +1,7 @@
 site_name: Adam Brykajlo
 theme:
   name: material
-  logo: assets/img/logo.svg
+  logo: images/logo.svg
   favicon: favicon.svg
   features:
     - navigation.tabs
