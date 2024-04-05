@@ -2,9 +2,7 @@
 title: Groovy
 layout: simple
 date: 2018-01-04
-tags:
-  - drawing
-category:
+categories:
   - art
 ---
 

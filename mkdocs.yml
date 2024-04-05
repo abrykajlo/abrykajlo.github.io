@@ -1,0 +1,42 @@
+site_name: Adam Brykajlo
+theme:
+  name: material
+  logo: assets/img/logo.svg
+  favicon: favicon.svg
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - blog:
+      blog_dir: .
+  - search
+  - tags
+
+extra:
+  homepage: https://www.adambrykajlo.ca
+  social:
+    - icon: fontawesome/solid/at
+      link: mailto:adam.brykajlo@gmail.com
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/abrykajlo
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/abrykajlo
+
+copyright: |
+  Adam Brykajlo &copy; 2017-2024

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    
+      <url>
+            <loc>http://localhost:1313/blog/</loc>
+            <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/</loc>
+            <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/blog/my-first-post-in-four-years/</loc>
+            <lastmod>2022-06-14T00:00:00+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/blog/life-update-and-some-rust/</loc>
+            <lastmod>2018-11-11T00:00:00+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/blog/little-red-box/</loc>
+            <lastmod>2018-06-29T00:00:00+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/blog/groovy/</loc>
+            <lastmod>2018-01-04T00:00:00+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/blog/start-of-a-gallery/</loc>
+            <lastmod>2017-12-21T00:00:00+00:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/about/</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+    
+  
+    
+      <url>
+            <loc>http://localhost:1313/gallery/</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+  
+</urlset>
