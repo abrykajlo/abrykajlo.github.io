@@ -2,3 +2,24 @@
   --md-primary-fg-color: #FBC02D;
   --md-accent-fg-color: #424242;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.gallery > * {
+  width: 33%;
+}
+
+.about {
+  display: flex;
+  gap: 3em;
+}
+
+.about > img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
