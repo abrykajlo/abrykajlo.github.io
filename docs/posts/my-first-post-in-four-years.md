@@ -1,11 +1,15 @@
 ---
 title: My First Post In Four Years
 date: 2022-06-14
+categories:
+  - personal
 ---
 
 ## Departure from Relic
 
 Working in the game industry was a lifelong dream of mine. Now that Age of Empires IV has been released I am now looking towards the future and figuring out what is next. Since my departure from Relic Entertainment I have been spending time working on some personal programming projects, this has involved learning various new technologies. This has included Unity, Unreal, Dear ImGui, various Boost libraries, and working at improving my C++ programming skills. One area I really want to explore for my career is Tools Development. I enjoyed the aspect of UI where I was interacting with and helping artists create their visions. As a tool's developer I see there being more room for getting into the headspace of an artist. I enjoy playing and learning different 3D tools so being able to create tools for them sounds exciting to me.
+
+<!-- more -->
 
 ## Life + Blog
 

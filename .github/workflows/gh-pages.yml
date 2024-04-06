@@ -1,5 +1,3 @@
-# .github/workflows/gh-pages.yml
-
 name: GitHub Pages
 
 on:
@@ -7,30 +5,21 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
-  build-deploy:
-    runs-on: ubuntu-20.04
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
+  deploy:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python
         with:
-          submodules: true
-          fetch-depth: 0
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+          python-version: 3.x
+      - uses: actions/cache@v2
         with:
-          hugo-version: "latest"
-
-      - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./public
+          key: ${{ github.ref }}
+          path: .cache
+      - run: pip install mkdocs-material
+      - run: pip install mkdocs-glightbox
+      - run: mkdocs gh-deploy --force

@@ -1,0 +1,25 @@
+:root {
+  --md-primary-fg-color: #fbc02d;
+  --md-accent-fg-color: #f89c11;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.gallery > * {
+  width: 33%;
+}
+
+.about {
+  display: flex;
+  gap: 3em;
+}
+
+.about > img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
