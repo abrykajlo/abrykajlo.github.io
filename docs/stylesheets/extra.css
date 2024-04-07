@@ -3,6 +3,19 @@
   --md-accent-fg-color: #f89c11;
 }
 
+.md-header__button.md-logo {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 60%;
+  width: 60%;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
