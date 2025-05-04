@@ -1,7 +1,6 @@
 site_name: Adam Brykajlo
 theme:
   name: material
-  logo: images/logo.svg
   favicon: images/favicon.svg
   features:
     - navigation.tabs
@@ -28,30 +27,3 @@ plugins:
   - search
   - tags
   - glightbox
-
-extra:
-  homepage: https://www.adambrykajlo.ca
-  social:
-    - icon: fontawesome/solid/at
-      link: mailto:adam.brykajlo@gmail.com
-    - icon: fontawesome/brands/github-alt
-      link: https://github.com/abrykajlo
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/abrykajlo
-
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - admonition
-  - pymdownx.arithmatex:
-      generic: true
-  - footnotes
-  - pymdownx.details
-  - pymdownx.superfences
-  - pymdownx.mark
-  - attr_list
-
-copyright: |
-  Adam Brykajlo &copy; 2017-2024

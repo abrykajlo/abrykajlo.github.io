@@ -1,3 +1,23 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://www.adambrykajlo.ca/"
+languageCode = "en"
+title = "Adam Brykajlo"
+logo = "images/logo.svg"
+
+[params]
+logo = "images/logo.svg"
+colorScheme = "avocado" # TODO pick colorscheme custom?
+
+[params.author]
+name = "Adam Brykajlo"
+image = "images/headshot.jpg"
+headline = "[TODO] Awesome human"
+bio = "[TODO] A little about me"
+links = [
+    { github = "https://github.com/abrykajlo" },
+    { linkedin = "https://www.linkedin.com/in/abrykajlo/" },
+    { email = "mailto:adam.brykajlo@gmail.com" },
+]
+
+[[module.imports]]
+disable = false
+path = "github.com/nunocoracao/blowfish/v2"
