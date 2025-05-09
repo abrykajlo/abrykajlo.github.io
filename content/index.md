@@ -1,5 +1,2 @@
 ---
-hide: navigation
 ---
-
-# Blog

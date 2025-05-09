@@ -1,0 +1,26 @@
+[[main]]
+name = "About"
+pageRef = "about"
+weight = 10
+
+[[main]]
+name = "Posts"
+pageRef = "posts"
+weight = 20
+
+[[main]]
+name = "Gallery"
+pageRef = "gallery"
+weight = 30
+
+[[main]]
+identifier = "github"
+pre = "github"
+url = "https://github.com/abrykajlo"
+weight = 40
+
+[[main]]
+identifier = "linkedin"
+pre = "linkedin"
+url = "https://www.linkedin.com/in/abrykajlo"
+weight = 50
