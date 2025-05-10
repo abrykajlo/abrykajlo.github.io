@@ -1,0 +1,6 @@
+baseURL = "https://www.adambrykajlo.ca/"
+languageCode = "en"
+title = "Adam Brykajlo"
+
+[markup.goldmark.renderer]
+unsafe = true
