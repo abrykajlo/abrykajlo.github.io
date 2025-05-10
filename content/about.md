@@ -1,5 +1,8 @@
 +++
 title = "About Me"
+showDate = false
+showWordCount = false
+showReadingTime = false
 +++
 
 When I was in high school I had a dilemma. Do I pursue the visual arts and be a creative in
