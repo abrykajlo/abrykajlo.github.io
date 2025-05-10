@@ -8,11 +8,10 @@ name = "Posts"
 pageRef = "posts"
 weight = 20
 
-# TODO: get gallery working in Hugo
-#[[main]]
-#name = "Gallery"
-#pageRef = "gallery"
-#weight = 30
+[[main]]
+name = "Gallery"
+pageRef = "gallery"
+weight = 30
 
 [[main]]
 identifier = "github"
