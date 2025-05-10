@@ -1,5 +1,5 @@
 logo = "images/logo.svg"
-colorScheme = "avocado" # TODO pick colorscheme custom?
+colorScheme = "avocado"
 
 [author]
 name = "Adam Brykajlo"

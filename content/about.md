@@ -1,7 +1,6 @@
----
-title: About Me
-hide: navigation
----
++++
+title = "About Me"
++++
 
 When I was in high school I had a dilemma. Do I pursue the visual arts and be a creative in
 the game or VFX industry? Or do I double down on math and science to become a knowledge worker
