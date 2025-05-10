@@ -4,8 +4,7 @@ colorScheme = "avocado" # TODO pick colorscheme custom?
 [author]
 name = "Adam Brykajlo"
 image = "images/headshot.jpg"
-headline = "[TODO] Awesome human"
-bio = "[TODO] A little about me"
+headline = "Software Engineer in Visual Computing"
 links = [
     { github = "https://github.com/abrykajlo" },
     { linkedin = "https://www.linkedin.com/in/abrykajlo/" },
