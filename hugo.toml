@@ -2,5 +2,8 @@ baseURL = "https://www.adambrykajlo.ca/"
 languageCode = "en"
 title = "Adam Brykajlo"
 
+[caches.images]
+dir = ":cacheDir/images"
+
 [markup.goldmark.renderer]
 unsafe = true
