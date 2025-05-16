@@ -2,6 +2,11 @@ baseURL = "https://www.adambrykajlo.ca/"
 languageCode = "en"
 title = "Adam Brykajlo"
 
+googleAnalytics = "G-4LCY6N96TZ"
+
+[services.disqus]
+shortname = "abrykajlo"
+
 [caches.images]
 dir = ":cacheDir/images"
 

@@ -2,6 +2,7 @@
 title = "My First Post In Four Years"
 date = 2022-06-14
 categories = [ "personal" ]
+showComments = true
 +++
 
 ## Departure from Relic
