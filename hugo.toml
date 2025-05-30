@@ -4,6 +4,11 @@ title = "Adam Brykajlo"
 
 googleAnalytics = "G-4LCY6N96TZ"
 
+[taxonomies]
+tag = "tags"
+category = "categories"
+series = "series"
+
 [services.disqus]
 shortname = "abrykajlo"
 
